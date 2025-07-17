@@ -20,7 +20,7 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="relative w-full h-screen">
             <Image
-              src="/images/slide1.jpg"
+              src="/images/slide1.png"
               alt="Slide 1"
               fill
               className="object-cover"
@@ -40,7 +40,7 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="relative w-full h-screen">
             <Image
-              src="/images/slide2.jpg"
+              src="/images/slide1.png"
               alt="Slide 2"
               fill
               className="object-cover"
