@@ -22,8 +22,8 @@ export default function Footer() {
             the readable content of a page when looking at
           </p>
           <div className="flex gap-4 mt-6">
-            <SocialIcon
-              href="https://linkedin.com"
+             <SocialIcon
+              href="https://www.linkedin.com/company/sahynex/"
               icon={<Linkedin className="w-5 h-5" />}
             />
             <SocialIcon
