@@ -23,7 +23,7 @@ const ConnectFooter = () => {
             Connect with a Sahynex representative!
           </h2>
           <p className="mt-2 text-sm">
-            Got any quarries? Want to know more about our services? <br />
+            Got any queries? Want to know more about our services? <br />
             <Link href="/Contact" className="text-white font-bold ">
               Contact us now!
             </Link>

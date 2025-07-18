@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#f7f7f7] px-4 md:px-6 py-4">
-      <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between">
         <Link href="/">
           <Image
             src="/logo/sahynex.svg"
@@ -66,13 +66,13 @@ const Header = () => {
                   About Us
                 </Link>
                 <Link
-                  href="#team"
+                  href="/About#team"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
                 >
                   Our Team
                 </Link>
                 <Link
-                  href="#clients"
+                  href="/About#clients"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
                 >
                   Our Clients

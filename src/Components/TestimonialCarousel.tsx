@@ -43,7 +43,7 @@ export default function TestimonialCarousel() {
   return (
     <section className="py-16 bg-white">
       <div className="text-center mb-10">
-        <p className="text-red-500 font-semibold">\\ From our Customers \\</p>
+        <h2 className="text-red-500 font-semibold">\\ From our Customers \\</h2>
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
           Testimonials
         </h2>
