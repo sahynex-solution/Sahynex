@@ -3,10 +3,12 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react"; 
-
+import { ChevronDown, ChevronUp } from "lucide-react";
 const Header = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMobileAboutOpen, setIsMobileAboutOpen] = useState(false);
+
   let timeoutId: NodeJS.Timeout;
 
   const handleMouseEnter = () => {
@@ -64,13 +66,13 @@ const Header = () => {
                   About Us
                 </Link>
                 <Link
-                  href="/Team"
+                  href="#team"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
                 >
                   Our Team
                 </Link>
                 <Link
-                  href="/Clients"
+                  href="#clients"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
                 >
                   Our Clients
@@ -97,10 +99,14 @@ const Header = () => {
         </nav>
 
         <button
-          className="md:hidden focus:outline-none"
+          className="md:hidden focus:outline-none  "
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
-          {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          {mobileMenuOpen ? (
+    <X size={28} color="#333" /> 
+  ) : (
+    <Menu size={28} color="#333" /> 
+  )}
         </button>
       </div>
 
@@ -112,17 +118,23 @@ const Header = () => {
 
           <div>
             <details className="group">
-              <summary className="text-[#0e1f51] hover:text-[#EB505A] font-medium cursor-pointer">
-                About Us
-              </summary>
+            <summary className="text-[#0e1f51] hover:text-[#EB505A] font-medium cursor-pointer flex items-center justify-between">
+      About Us
+      
+
+<span>
+  {isMobileAboutOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+</span>
+
+    </summary>
               <div className="pl-4 mt-2 space-y-2">
                 <Link href="/About" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
                   About Us
                 </Link>
-                <Link href="/Team" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+                <Link href="#team" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
                   Our Team
                 </Link>
-                <Link href="/Clients" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+                <Link href="#clients" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
                   Our Clients
                 </Link>
               </div>
