@@ -111,53 +111,53 @@ const Header = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="mt-4 space-y-4 md:hidden">
-          <Link href="/" className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-            Home
+  <div className="mt-4 space-y-4 md:hidden">
+    <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
+      Home
+    </Link>
+
+    <div>
+      <button
+        className="text-[#0e1f51] hover:text-[#EB505A] font-medium cursor-pointer flex items-center justify-between w-full"
+        onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
+      >
+        About Us
+        {isMobileAboutOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+      </button>
+
+      {isMobileAboutOpen && (
+        <div className="pl-4 mt-2 space-y-2">
+          <Link href="/About" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+            About Us
           </Link>
-
-          <div>
-            <details className="group">
-            <summary className="text-[#0e1f51] hover:text-[#EB505A] font-medium cursor-pointer flex items-center justify-between">
-      About Us
-      
-
-<span>
-  {isMobileAboutOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-</span>
-
-    </summary>
-              <div className="pl-4 mt-2 space-y-2">
-                <Link href="/About" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
-                  About Us
-                </Link>
-                <Link href="#team" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
-                  Our Team
-                </Link>
-                <Link href="#clients" className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
-                  Our Clients
-                </Link>
-              </div>
-            </details>
-          </div>
-
-          <Link href="/Services" className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-            Our Services
+          <Link href="#team" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+            Our Team
           </Link>
-          <Link href="/Career" className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-            Career
-          </Link>
-          <Link href="/Contact" className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-            Contact
-          </Link>
-
-          <Link href="/Contact">
-            <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium">
-              Get In Touch
-            </button>
+          <Link href="#clients" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+            Our Clients
           </Link>
         </div>
       )}
+    </div>
+
+    <Link href="/Services" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
+      Our Services
+    </Link>
+    <Link href="/Career" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
+      Career
+    </Link>
+    <Link href="/Contact" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
+      Contact
+    </Link>
+
+    <Link href="/Contact" onClick={() => setMobileMenuOpen(false)}>
+      <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium">
+        Get In Touch
+      </button>
+    </Link>
+  </div>
+)}
+
     </header>
   );
 };
