@@ -125,12 +125,12 @@ export default function Page() {
               {slides.map((src, i) => (
                 <SwiperSlide
                   key={i}
-                  className="!w-[280px] !h-[380px] rounded-xl overflow-visible shadow-xl relative"
+                  className="!w-[280px] !h-[450px] rounded-xl overflow-visible shadow-xl relative"
                 >
                   {/* Left Handle - taper to the left (pointy outward) */}
                   <div className="absolute left-[-25px] top-1/2 -translate-y-1/2 z-10">
                     <div
-                      className="w-[20px] h-[380px] bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
+                      className="w-[20px] h-[450px] bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
                       style={{ clipPath: 'polygon(100% 0, 0 10%, 0 90%, 100% 100%)' }}
                     />
                   </div>
@@ -138,7 +138,7 @@ export default function Page() {
                   {/* Right Handle - taper to the right (pointy outward) */}
                   <div className="absolute right-[-25px] top-1/2 -translate-y-1/2 z-10">
                     <div
-                      className="w-[20px] h-[380px] bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
+                      className="w-[20px] h-[450px] bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
                       style={{ clipPath: 'polygon(0 0, 100% 10%, 100% 90%, 0% 100%)' }}
                     />
                   </div>
@@ -148,8 +148,8 @@ export default function Page() {
                     src={src}
                     alt={`Slide ${i + 1}`}
                     width={280}
-                    height={380}
-                    className="w-[280px] h-[380px] object-cover rounded-xl"
+                    height={450}
+                    className="w-[280px] h-[450px] object-cover rounded-xl"
                   />
                 </SwiperSlide>
 
