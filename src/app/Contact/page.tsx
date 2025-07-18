@@ -100,7 +100,7 @@ const ContactForm: FC = () => {
                 Follow us
               </h3>
               <div className="flex space-x-4">
-                <Link href="https://linkedin.com" target="_blank">
+                 <Link href="https://www.linkedin.com/company/sahynex/" target="_blank">
                   <div className="p-2 bg-[#EB505A] rounded-md text-white hover:bg-[#e03e4b] cursor-pointer">
                     <FaLinkedinIn size={20} />
                   </div>
