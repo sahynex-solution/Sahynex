@@ -7,15 +7,15 @@ import { IoGlobeOutline } from 'react-icons/io5';
 const TopBar = () => {
   return (
     <div className="w-full bg-gradient-to-r from-[#5C7FE0] via-[#745087] to-[#ff0000] text-white text-xs sm:text-sm px-4 sm:px-6 py-2">
-      <div className="flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
-        <div className="text-center sm:text-left">
+      <div className="flex justify-between items-center flex-wrap gap-2">
+        <div className="text-center sm:text-left w-full sm:w-auto">
           Email:{' '}
-          <Link href="mailto:sahynexsolutions@gmail.com" className=" hover:text-yellow-300">
+          <Link href="mailto:sahynexsolutions@gmail.com" className="hover:text-yellow-300">
             sahynexsolutions@gmail.com
           </Link>
         </div>
 
-        <div className="flex items-center flex-wrap justify-center gap-3">
+        <div className="hidden sm:flex items-center flex-wrap justify-center gap-3">
           <Link
             href="https://instagram.com"
             target="_blank"

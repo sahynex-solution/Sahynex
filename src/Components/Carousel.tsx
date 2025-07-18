@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 
 const Carousel = () => {
   return (
-    <div className="w-full h-[100vh] sm:h-[90vh] relative">
+    <div className="w-full h-[300px] sm:h-[400px] md:h-[100vh] relative">
       <Swiper
         modules={[Autoplay, Pagination]}
         slidesPerView={1}
@@ -24,16 +24,15 @@ const Carousel = () => {
               alt="Slide 1"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 100vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
               priority
             />
-            <div className="absolute inset-0 bg-black/40 flex items-center">
-              <div className="px-4 sm:px-10 max-w-xl text-white">
-                <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-2">
-                  IT Solutions
-                </p>
-                <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight">
-                  Professional IT <br className="hidden sm:block" /> Services for Business
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-start">
+              <div className="px-4 sm:px-8 md:px-12 max-w-md sm:max-w-lg text-white space-y-2">
+                <p className="text-yellow-400 text-sm font-medium">IT Solutions</p>
+                <h1 className="text-lg sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight">
+                  Professional IT <br className="hidden sm:block" />
+                  Services for Business
                 </h1>
               </div>
             </div>
@@ -47,15 +46,12 @@ const Carousel = () => {
               alt="Slide 2"
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 100vw, 100vw"
-              priority
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
             />
-            <div className="absolute inset-0 bg-black/40 flex items-center">
-              <div className="px-4 sm:px-10 max-w-xl text-white">
-                <p className="text-yellow-400 text-xs sm:text-sm font-semibold mb-2">
-                  IT Solutions
-                </p>
-                <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            <div className="absolute inset-0 bg-black/50 flex items-center justify-start">
+              <div className="px-4 sm:px-8 md:px-12 max-w-md sm:max-w-lg text-white space-y-2">
+                <p className="text-yellow-400 text-sm font-medium">IT Solutions</p>
+                <h1 className="text-lg sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight">
                   Marketing Solutions
                 </h1>
               </div>
