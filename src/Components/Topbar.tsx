@@ -37,7 +37,13 @@ const TopBar = () => {
           >
             <FaTwitter size={14} />
           </Link>
-
+    <Link
+          href="https://www.linkedin.com/company/sahynex"
+          target="_blank"
+          className="hover:text-yellow-400"
+        >
+        <FaLinkedinIn size={14} />
+        </Link>
           <Link
             href="#"
             className="flex items-center gap-1 border border-white rounded-full px-3 py-1 hover:bg-white hover:text-black transition text-xs"
