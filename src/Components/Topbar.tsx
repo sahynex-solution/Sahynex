@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FaInstagram, FaFacebookF, FaTwitter } from 'react-icons/fa';
+import { FaInstagram,FaLinkedinIn, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import { IoGlobeOutline } from 'react-icons/io5';
 
 const TopBar = () => {
