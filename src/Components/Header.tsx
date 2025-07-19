@@ -62,18 +62,21 @@ const Header = () => {
                 <Link
                   href="/About"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
+                  onClick={() => setIsAboutOpen(false)}                
                 >
                   About Us
                 </Link>
                 <Link
                   href="/About#team"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
+                  onClick={() => setIsAboutOpen(false)}
                 >
                   Our Team
                 </Link>
                 <Link
                   href="/About#clients"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
+                  onClick={() => setIsAboutOpen(false)}
                 >
                   Our Clients
                 </Link>
