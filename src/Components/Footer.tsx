@@ -17,9 +17,8 @@ export default function Footer() {
     <footer className="bg-[#0d1440] text-white py-16 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
         <div>
-          <p className="mb-4 leading-relaxed text-gray-300">
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at
+          <p className="mb-4 leading-relaxed text-gray-300 mt-8">
+          At Sahynex, we believe clarity in design and function leads to products that users truly connect with and inspire innovation in every interaction.
           </p>
           <div className="flex gap-4 mt-6">
              <SocialIcon
@@ -59,18 +58,18 @@ export default function Footer() {
           <div className="w-10 h-1 bg-red-500 mb-4 rounded"></div>
           <div className="space-y-4">
             <CareerItem
-              href="https://reactjs.org"
+              href="/careers"
               icon={<Atom className="w-5 h-5" />}
               title="ReactJs Dev. Intern"
             />
             <CareerItem
-              href="https://wordpress.org"
+              href="/careers"
               icon={<Globe className="w-5 h-5" />}
               title="Wordpress Dev. Intern"
             />
 
             <CareerItem
-              href="https://www.python.org"
+              href="/careers"
               icon={<Code className="w-5 h-5" />}
               title="Python Developer Intern"
             />
@@ -81,8 +80,7 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-1">Subscribe Us</h4>
           <div className="w-10 h-1 bg-red-500 mb-4 rounded"></div>
           <p className="text-gray-300 mb-4 leading-relaxed">
-            It is a long established fact that a reader will be distracted by
-            the readable
+          Subscribe to our periodic newsletter for updates on innovations, client stories, and more from the team at Sahynex.
           </p>
           <form className="flex flex-col gap-3">
             <input

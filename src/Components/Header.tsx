@@ -153,8 +153,8 @@ const Header = () => {
       Contact
     </Link>
 
-    <Link href="/Contact" onClick={() => setMobileMenuOpen(false)}>
-      <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium">
+    <Link href="/Contact" onClick={() => setMobileMenuOpen(false)} className="cursor-pointer">
+      <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium cursor-pointer">
         Get In Touch
       </button>
     </Link>

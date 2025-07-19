@@ -30,11 +30,7 @@ const Whatwedo = () => {
               </h2>
 
               <p className="text-gray-700 mb-4 max-w-xl text-[15.5px] leading-relaxed">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed, Lorem Ipsum is that
-                it has a more-or-less normal distribution of letters, as opposed
+              At Sahynex, we craft digital products that not only solve real-world problems but are truly loved by users. With every client collaboration, we bring together design, technology, and strategy to deliver impactful solutions that stand out.
               </p>
             </div>
 
@@ -48,7 +44,7 @@ const Whatwedo = () => {
                     Our Vision
                   </h4>
                   <p className="text-sm text-gray-600">
-                    It is a long established fact that
+                  Be A Trusted innovation partner for businesses
                   </p>
                 </div>
               </div>
@@ -62,7 +58,7 @@ const Whatwedo = () => {
                     Our Goal
                   </h4>
                   <p className="text-sm text-gray-600">
-                    It is a long established fact that
+                  To develop and deliver world-class products 
                   </p>
                 </div>
               </div>
