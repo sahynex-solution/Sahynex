@@ -19,7 +19,7 @@ const ContactForm: FC = () => {
             \ Get In Touch \
           </h2>
           <h2 className="text-white text-3xl sm:text-4xl font-bold mt-2">
-            Hey! Let's Talk
+            Hey! Let's Connect
           </h2>
         </div>
 
@@ -64,8 +64,8 @@ const ContactForm: FC = () => {
                 <h3 className="text-lg font-semibold text-[#EB505A]">
                   Call Anytime
                 </h3>
-                <p className=" text-[#322a56]">+91 23678447867</p>
-                <p className=" text-[#322a56]">+91 67477473984</p>
+                <p className=" text-[#322a56]">+91 8762205219</p>
+                {/* <p className=" text-[#322a56]">+91 67477473984</p> */}
               </div>
             </div>
 
@@ -77,8 +77,8 @@ const ContactForm: FC = () => {
                 <h3 className="text-lg font-semibold text-[#EB505A]">
                   Send Email
                 </h3>
-                <p className=" text-[#322a56]">connect@sahynex.com</p>
-                <p className=" text-[#322a56]">hello@sahynex.com</p>
+                <p className=" text-[#322a56]">sahynexsolutions@gmail.com</p>
+                {/* <p className=" text-[#322a56]">hello@sahynex.com</p> */}
               </div>
             </div>
 
