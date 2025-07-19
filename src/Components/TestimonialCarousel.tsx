@@ -17,8 +17,8 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Samual Karl",
-    title: "CEO",
+    name: "Shri Mahesh Bhat Choontharu",
+    title: "President of Shri Rama Seva Samiti Chokkadi",
     image: "/testimonials/user1.svg",
     message:
       "Sahynex stood out for their responsiveness and attention to detail. They took feedback seriously and translated our requirements into a powerful tool that our customers love using",

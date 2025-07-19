@@ -36,10 +36,7 @@ const AboutPage = () => {
             One of the Fastest Way to <br /> Business Growth
           </h2>
           <p className="text-amber-50 text-base mb-8 max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute.
+          We are a passionate team committed to accelerating your business growth through innovative digital solutions, combining strategy, design, and technology to deliver impactful results that help you stay ahead in a rapidly evolving market
           </p>
           <div className="bg-[#fbeaec] rounded-2xl p-6 flex items-center gap-6 mb-8 shadow">
             <Image src="/icons/contact.svg" alt="Contact icon" width={64} height={64} />
@@ -67,13 +64,7 @@ const AboutPage = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500 ">About Sahynex</h2>
           <p className="text-gray-800 text-base md:text-lg leading-relaxed">
-            “But I must explain to you how all this mistaken idea of denouncing pleasure
-            and praising pain was born and I will give you a complete account of the
-            system, and expound the actual teachings of the great explorer of the truth,
-            the master-builder of human happiness. No one rejects, dislikes, or avoids
-            pleasure itself, because it is pleasure, but because those who do not know
-            how to pursue pleasure rationally encounter consequences that are extremely
-            painful.”
+          Driven by a deep passion for building meaningful digital solutions, Sahynex is where innovation meets execution. Evolving from our days as ISDC, we’ve worked with startups and enterprises alike—bringing thoughtful design, powerful development, and a relentless focus on the user. For us, every project is a commitment: to quality, to collaboration, and to creating tools that people genuinely love to use.
           </p>
         </div>
       </div>
@@ -100,8 +91,7 @@ const AboutPage = () => {
                 We Develop Product That <br /> People Love to Use.
               </h2>
               <p className="text-gray-700 mb-4 max-w-xl text-[15.5px] leading-relaxed">
-                It is a long established fact that a reader will be distracted by the
-                readable content of a page when looking at its layout.
+              At Sahynex, we craft digital products that not only solve real-world problems but are truly loved by users. With every client collaboration, we bring together design, technology, and strategy to deliver impactful solutions that stand out.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
@@ -112,7 +102,7 @@ const AboutPage = () => {
                 <div>
                   <h4 className="text-red-600 font-semibold text-base">Our Vision</h4>
                   <p className="text-sm text-gray-600">
-                    It is a long established fact that
+                  Be A Trusted innovation partner for businesses
                   </p>
                 </div>
               </div>
@@ -123,17 +113,17 @@ const AboutPage = () => {
                 <div>
                   <h4 className="text-red-600 font-semibold text-base">Our Goal</h4>
                   <p className="text-sm text-gray-600">
-                    It is a long established fact that
+                  To develop and deliver world-class products 
                   </p>
                 </div>
               </div>
             </div>
-            <Link
+            {/* <Link
               href="/About"
               className="text-sm font-semibold text-[#0e1f51] hover:text-[#EB505A] flex items-center gap-1"
             >
               <span>READ MORE</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
@@ -170,22 +160,22 @@ const AboutPage = () => {
         },
         {
           name: "Dr. Duddela Sai Prashanth",
-          title: "Placeholder",
+          title: "Advisor",
           image: "/images/leaders/prashanth.png",
         },
         {
           name: "Mr. Harisha",
-          title: "Placeholder",
+          title: "Advisor",
           image: "/images/leaders/harisha.png",
         },
         {
           name: "Mr. Vasudeva Rao P V",
-          title: "Placeholder",
+          title: "Advisor",
           image: "/images/leaders/vasudeva.jpg",
         },
         {
           name: "Shreekara B",
-          title: "Placeholder",
+          title: "CTO",
           image: "/images/leaders/shreekara.png",
         },
       ].map((leader, index) => (
@@ -219,7 +209,7 @@ const AboutPage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[rgba(255,62,84,0.84)] opacity-20"></div>
         <div className="relative max-w-6xl mx-auto text-center z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mb-0">
-            Our <span className="text-[#EB505A]">Clients</span>
+             <span className="text-[#e80312]">Our Clients</span>
           </h2>
           <ClientSlider />
         </div>

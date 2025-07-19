@@ -9,51 +9,36 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const clients = [
-  {
-    name: "Shreekara B",
-    title: "Founder of Shreek’s blogs",
-    testimonial:
-      "Sahynex is designed amazing platform for full project management solution.",
-    image: "/images/clients/shreekara.png",
-    bgColor: "bg-white text-gray-700", // White card
-    quoteColor: "text-[#1f4b9b]", // Dark blue quote
-  },
-  {
-    name: "Heggade Vahini",
-    title: "Founder of Heggade Vahini",
-    testimonial:
-      "Sahynex is designed amazing platform for full project management solution.",
-    image: "/images/clients/heggade.jpg",
-    bgColor: "bg-[#4A90E2] text-white", // Blue card
-    quoteColor: "text-white", // White quote
-  },
-  {
-    name: "Ram Prasad",
-    title: "President of Sri Rama Temple Chokkadi",
-    testimonial:
-      "Sahynex is designed amazing platform for full project management solution.",
-    image: "/images/clients/ramprasad.png",
-    bgColor: "bg-[#4A90E2] text-white", // Blue card
-    quoteColor: "text-white", // White quote
-  },
-  {
-    name: "Ram Prasad",
-    title: "President of Sri Rama Temple Chokkadi",
-    testimonial:
-      "Sahynex is designed amazing platform for full project management solution.",
-    image: "/images/clients/ramprasad.png",
-    bgColor: "bg-[#4A90E2] text-white", // Blue card
-    quoteColor: "text-white", // White quote
-  },
-  {
-    name: "Ram Prasad",
-    title: "President of Sri Rama Temple Chokkadi",
-    testimonial:
-      "Sahynex is designed amazing platform for full project management solution.",
-    image: "/images/clients/ramprasad.png",
-    bgColor: "bg-[#4A90E2] text-white", // Blue card
-    quoteColor: "text-white", // White quote
-  },
+  
+    {
+      name: "Shri Mahesh Bhat Choontharu",
+      title: "President of Shri Rama Seva Samiti Chokkadi",
+      testimonial:
+        "They took feedback seriously and translated our requirements into a powerful tool that our customers love using.",
+      image: "/user.png",
+      bgColor: "bg-white text-gray-700", // White card
+      quoteColor: "text-[#1f4b9b]", // Dark blue quote
+    },
+    {
+      name: "Ashwath Hegde",
+      title: "Founder of Heggade Vahini",
+      testimonial:
+        "They understood our vision from day one and delivered a seamless platform that really exceeded  our expectations. ",
+      image: "/testimonials/user2.svg",
+      bgColor: "bg-[#4A90E2] text-white", // Blue card
+      quoteColor: "text-white", // White quote
+    },
+    {
+      name: "Shri Kishor Kumar Kujugodu",
+      title: "President,Harihareshwara Temple",
+      testimonial:
+        "From UI/UX to deployment, they owned the product like it was theirs. We’d gladly work with them again.",
+      image: "/user.png",
+      bgColor: "bg-[#4A90E2] text-white", // Blue card
+      quoteColor: "text-white", // White quote
+    },
+  
+  
 ];
 
 export default function ClientSlider() {
@@ -80,7 +65,7 @@ export default function ClientSlider() {
           {clients.map((client, index) => (
             <SwiperSlide
               key={index}
-              className="overflow-visible"
+              className="overflow-visible "
             >
               <div
                 className={`${client.bgColor} rounded-2xl shadow-md p-10 m-3 flex flex-col justify-between transition-transform hover:scale-105 origin-center h-[375px]`}
@@ -107,7 +92,7 @@ export default function ClientSlider() {
                   />
                   <div className="text-left">
                     <h4 className="font-semibold text-base">{client.name}</h4>
-                    <p className="text-sm opacity-80">{client.title}</p>
+                    <p className="text-sm opacity-80 ">{client.title}</p>
                   </div>
                 </div>
               </div>
