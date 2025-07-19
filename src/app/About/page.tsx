@@ -148,36 +148,36 @@ const AboutPage = () => {
           title: "Director",
           image: "/images/leaders/sudheer.jpg",
         },
-        {
-          name: "Dr. Shamantha Rai B",
-          title: "Director",
-          image: "/images/leaders/shamantha.jpg",
-        },
+        // {
+        //   name: "Dr. Shamantha Rai B",
+        //   title: "Director",
+        //   image: "/images/leaders/shamantha.jpg",
+        // },
         {
           name: "Dr. Rithesh Pakkala P.",
           title: "CEO",
           image: "/images/leaders/rithesh.png",
         },
-        {
-          name: "Dr. Duddela Sai Prashanth",
-          title: "Advisor",
-          image: "/images/leaders/prashanth.png",
-        },
-        {
-          name: "Mr. Harisha",
-          title: "Advisor",
-          image: "/images/leaders/harisha.png",
-        },
+        // {
+        //   name: "Dr. Duddela Sai Prashanth",
+        //   title: "Advisor",
+        //   image: "/images/leaders/prashanth.png",
+        // },
+        // {
+        //   name: "Mr. Harisha",
+        //   title: "Advisor",
+        //   image: "/images/leaders/harisha.png",
+        // },
         {
           name: "Mr. Vasudeva Rao P V",
           title: "Advisor",
           image: "/images/leaders/vasudeva.jpg",
         },
-        {
-          name: "Shreekara B",
-          title: "CTO",
-          image: "/images/leaders/shreekara.png",
-        },
+        // {
+        //   name: "Shreekara B",
+        //   title: "sahynex",
+        //   image: "/images/leaders/shreekara.png",
+        // },
       ].map((leader, index) => (
         <div
           key={index}
