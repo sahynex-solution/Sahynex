@@ -32,10 +32,10 @@ const AboutPage = () => {
             <span>About</span>
             <span className="text-[#EB505A]">\</span>
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#2B2B4F] mb-4 leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-bold text-blue-60 mb-4 leading-tight">
             One of the Fastest Way to <br /> Business Growth
           </h2>
-          <p className="text-[#6B6B8F] text-base mb-8 max-w-xl">
+          <p className="text-amber-50 text-base mb-8 max-w-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -65,7 +65,7 @@ const AboutPage = () => {
       {/* ✅ About Sahynex Section */}
       <div className="bg-white mt-10 mb-10 py-25 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">About Sahynex</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500 ">About Sahynex</h2>
           <p className="text-gray-800 text-base md:text-lg leading-relaxed">
             “But I must explain to you how all this mistaken idea of denouncing pleasure
             and praising pain was born and I will give you a complete account of the

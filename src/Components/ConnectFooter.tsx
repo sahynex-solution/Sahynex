@@ -24,14 +24,14 @@ const ConnectFooter = () => {
           </h2>
           <p className="mt-2 text-sm">
             Got any queries? Want to know more about our services? <br />
-            <Link href="/Contact" className="text-white font-bold ">
+            <Link href="/Contact" className="text-white font-bold  ">
               Contact us now!
             </Link>
           </p>
         </div>
 
         <Link href="/Contact">
-          <button className="bg-white text-red-500 font-semibold px-4 py-2 rounded shadow hover:bg-red-100 transition">
+          <button className="bg-white text-red-500 font-semibold px-4 py-2 rounded shadow hover:bg-red-100 transition cursor-pointer">
             Get In Touch
           </button>
         </Link>

@@ -21,21 +21,21 @@ const testimonials: Testimonial[] = [
     title: "CEO",
     image: "/testimonials/user1.svg",
     message:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "Sahynex stood out for their responsiveness and attention to detail. They took feedback seriously and translated our requirements into a powerful tool that our customers love using",
   },
   {
     name: "Heggade Vahini",
     title: "CEO",
     image: "/testimonials/user2.svg",
     message:
-      "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using content here.",
+      "They understood our vision from day one and delivered a seamless platform that exceeded expectations. Their dedication and professionalism made the entire process smooth and collaborative",
   },
   {
     name: "Shreek’s Blogs",
     title: "CEO",
     image: "/testimonials/user3.svg",
     message:
-      "Using Lorem Ipsum allows designers to focus on layout and design elements, making it easier to visualize the final product.",
+      "The team at Sahynex brought strong technical expertise and creative thinking to our project. From UI/UX to deployment, they owned the product like it was theirs. We’d gladly work with them again.",
   },
 ];
 
@@ -53,12 +53,12 @@ export default function TestimonialCarousel() {
         modules={[Autoplay, Pagination]}
         loop={true}
         autoplay={{
-          delay: 2000,
+          delay: 5000,
           disableOnInteraction: false,
           pauseOnMouseEnter: false,
         }}
         pagination={{ clickable: true }}
-        className="max-w-5xl mx-auto px-4"
+        className="max-w-5xl mx-auto px-4 "
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 1.5 },
@@ -67,7 +67,7 @@ export default function TestimonialCarousel() {
       >
         {testimonials.map((t, index) => (
           <SwiperSlide key={index} className="h-full">
-            <div className="bg-gray-50 rounded-lg shadow-md p-6 mx-2 h-full flex flex-col justify-between transition-all duration-300">
+            <div className="bg-gray-50 rounded-lg shadow-md p-6 mx-2 h-full flex flex-col justify-between transition-all duration-300 mb-12">
               <div className="flex justify-items-start mb-4">
                 <Image
                   src={t.image}
