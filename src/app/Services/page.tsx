@@ -20,32 +20,32 @@ const services = [
   {
     title: "Web Design / Development",
     icon: "/icons/web-design.svg",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+    desc: "We specialize in building responsive and dynamic websites that not only look great but also perform seamlessly across all devices, ensuring a strong digital presence for your brand."
   },
   {
     title: "UI/UX Design",
     icon: "/icons/ui-ux.svg",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+    desc: "Our design philosophy centers around creating user experiences that are visually engaging and intuitively functional, turning complex ideas into interfaces that feel natural and effortless to navigate."
   },
   {
     title: "Website Migration",
     icon: "/icons/migration.svg",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+    desc: "Whether you're shifting platforms or upgrading infrastructure, we ensure smooth and secure website migration with zero data loss, minimized downtime, and preserved SEO performance."
   },
   {
     title: "App Development",
     icon: "/icons/app-dev.svg",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+    desc: "From concept to launch, we develop mobile and web apps that are reliable, scalable, and tailored to your unique business needs, combining speed, aesthetics, and functionality."
   },
   {
     title: "Videography",
     icon: "/icons/video.svg",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+    desc: "Our team produces professional video content that captures your story with impact — whether for promotional campaigns, events, or branding — ensuring your message is seen and remembered."
   },
   {
     title: "Digital Marketing",
     icon: "/icons/marketing.svg",
-    desc: "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout"
+    desc: " We craft and execute data-driven digital marketing strategies that enhance visibility, engage your audience, and drive measurable results across SEO, social media, email, and paid channels."
   },
 ];
 
@@ -120,38 +120,35 @@ export default function Page() {
                 modifier: 2.5,
                 slideShadows: false,
               }}
-              className="w-full max-w-xl mx-auto"
-            >
+              className="w-full max-w-xl mx-auto">
               {slides.map((src, i) => (
                 <SwiperSlide
-                  key={i}
-                  className="!w-[280px] !h-[450px] rounded-xl overflow-visible shadow-xl relative"
-                >
-                  {/* Left Handle - taper to the left (pointy outward) */}
-                  <div className="absolute left-[-25px] top-1/2 -translate-y-1/2 z-10">
-                    <div
-                      className="w-[20px] h-[450px] bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
-                      style={{ clipPath: 'polygon(100% 0, 0 10%, 0 90%, 100% 100%)' }}
-                    />
-                  </div>
-
-                  {/* Right Handle - taper to the right (pointy outward) */}
-                  <div className="absolute right-[-25px] top-1/2 -translate-y-1/2 z-10">
-                    <div
-                      className="w-[20px] h-[450px] bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
-                      style={{ clipPath: 'polygon(0 0, 100% 10%, 100% 90%, 0% 100%)' }}
-                    />
-                  </div>
-
-
-                  <Image
-                    src={src}
-                    alt={`Slide ${i + 1}`}
-                    width={280}
-                    height={450}
-                    className="w-[280px] h-[450px] object-cover rounded-xl"
+                key={i}
+                className="!w-[280px] !h-[450px] sm:!w-[240px] sm:!h-[380px] rounded-xl overflow-visible shadow-xl relative"
+              >
+                <div className="absolute left-[-25px] top-1/2 -translate-y-1/2 z-10">
+                  <div
+                    className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
+                    style={{ clipPath: 'polygon(100% 0, 0 10%, 0 90%, 100% 100%)' }}
                   />
-                </SwiperSlide>
+                </div>
+              
+                <div className="absolute right-[-25px] top-1/2 -translate-y-1/2 z-10">
+                  <div
+                    className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
+                    style={{ clipPath: 'polygon(0 0, 100% 10%, 100% 90%, 0% 100%)' }}
+                  />
+                </div>
+              
+                <Image
+                  src={src}
+                  alt={`Slide ${i + 1}`}
+                  width={240}
+                  height={380}
+                  className="w-[280px] h-[450px] sm:w-[240px] sm:h-[380px] object-cover rounded-xl"
+                />
+              </SwiperSlide>
+              
 
               ))}
 
