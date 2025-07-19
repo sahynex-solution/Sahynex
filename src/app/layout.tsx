@@ -6,6 +6,7 @@ import TopBar from "@/Components/Topbar";
 import ConnectFooter from "@/Components/ConnectFooter";
 import BottomBar from "@/Components/BottomBar";
 import Footer from "@/Components/Footer";
+import ScrollToHash from "@/Components/scrollToHash"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,6 +43,7 @@ export default function RootLayout({
       >
     <TopBar/>
         <Header/>
+        <ScrollToHash />
         {children}
     <ConnectFooter/>
     <Footer/>
