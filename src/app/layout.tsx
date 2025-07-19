@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Raleway, Poppins, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/Components/Header";
 import TopBar from "@/Components/Topbar";
@@ -17,6 +17,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const raleway = Raleway({ variable: "--font-raleway", subsets: ["latin"] });
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"], // specify weights you need
+});
+
 export const metadata: Metadata = {
   title: "Sahynex",
   description: "Sahynex is a leading IT solutions provider, specializing in innovative software development, cloud services, and digital transformation.",
@@ -29,9 +36,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      > <TopBar/>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${poppins.variable} antialiased`}
+        style={{ fontFamily: "var(--font-raleway), var(--font-poppins), var(--font-geist-sans), sans-serif" }}
+      >
+    <TopBar/>
         <Header/>
         {children}
     <ConnectFooter/>

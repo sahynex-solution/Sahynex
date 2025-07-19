@@ -15,9 +15,9 @@ const ContactForm: FC = () => {
     <section className="bg-gradient-to-br from-[#2C2F7D] to-[#431344] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-[#EB505A] text-sm font-semibold tracking-wider">
+          <h2 className="text-[#EB505A] text-sm font-semibold tracking-wider">
             \ Get In Touch \
-          </p>
+          </h2>
           <h2 className="text-white text-3xl sm:text-4xl font-bold mt-2">
             Hey! Let's Talk
           </h2>
