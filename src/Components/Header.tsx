@@ -133,10 +133,10 @@ const Header = () => {
           <Link href="/About" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
             About Us
           </Link>
-          <Link href="#team" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+          <Link href="/About#team" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
             Our Team
           </Link>
-          <Link href="#clients" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+          <Link href="/About#clients" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
             Our Clients
           </Link>
         </div>
