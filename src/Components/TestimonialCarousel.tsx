@@ -19,7 +19,7 @@ const testimonials: Testimonial[] = [
   {
     name: "Shri Mahesh Bhat Choontharu",
     title: "President of Shri Rama Seva Samiti Chokkadi",
-    image: "/testimonials/user1.svg",
+    image: "/testimonials/user.png",
     message:
       "Sahynex stood out for their responsiveness and attention to detail. They took feedback seriously and translated our requirements into a powerful tool that our customers love using",
   },
@@ -31,8 +31,8 @@ const testimonials: Testimonial[] = [
       "They understood our vision from day one and delivered a seamless platform that exceeded expectations. Their dedication and professionalism made the entire process smooth and collaborative",
   },
   {
-    name: "Shreek’s Blogs",
-    title: "CEO",
+    name: "Shri Kishor Kumar Kujugodu",
+    title: "President,Harihareshwara Temple",
     image: "/testimonials/user3.svg",
     message:
       "The team at Sahynex brought strong technical expertise and creative thinking to our project. From UI/UX to deployment, they owned the product like it was theirs. We’d gladly work with them again.",

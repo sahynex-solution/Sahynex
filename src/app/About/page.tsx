@@ -49,13 +49,13 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          <a
+          {/* <a
             href="#"
             className="text-[#EB505A] text-xs font-semibold tracking-wider mt-2 underline flex items-center gap-2"
           >
             READ MORE
             <Image src="/icons/more.svg" alt="More Icon" width={16} height={16} />
-          </a>
+          </a> */}
         </div>
       </section>
 
