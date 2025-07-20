@@ -130,13 +130,15 @@ const Header = () => {
 
       {isMobileAboutOpen && (
         <div className="pl-4 mt-2 space-y-2">
-          <Link href="/About" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+          <Link href="/About" onClick={() => {setMobileMenuOpen(false);
+          setIsMobileAboutOpen(false)}
+          } className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
             About Us
           </Link>
-          <Link href="/About#team" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+          <Link href="/About#team" onClick={() => {setMobileMenuOpen(false);  setIsMobileAboutOpen(false)}} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
             Our Team
           </Link>
-          <Link href="/About#clients" onClick={() => setMobileMenuOpen(false)} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
+          <Link href="/About#clients" onClick={() => {setMobileMenuOpen(false);   setIsMobileAboutOpen(false)}} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
             Our Clients
           </Link>
         </div>

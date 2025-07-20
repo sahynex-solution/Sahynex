@@ -22,8 +22,8 @@ const ConnectFooter = () => {
           <h2 className="text-2xl font-bold text-yellow-300">
             Connect with a Sahynex representative!
           </h2>
-          <p className="mt-2 text-sm">
-            Got any queries? Want to know more about our services? <br />
+          <p className="mt-2 text-sm ">
+            Got any queries? Want to know more  about our services? <br />
             <Link href="/Contact" className="text-white font-bold  ">
               Contact us now!
             </Link>
