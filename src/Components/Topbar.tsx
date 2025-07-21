@@ -17,7 +17,7 @@ const TopBar = () => {
 
         <div className="hidden sm:flex items-center flex-wrap justify-center gap-3">
           <Link
-            href="https://instagram.com"
+            href="https://www.instagram.com/sahynex?igsh=NXMycTJrYjZ5bW42"
             target="_blank"
             className="hover:text-yellow-400"
           >
@@ -31,7 +31,7 @@ const TopBar = () => {
             <FaFacebookF size={14} />
           </Link>
           <Link
-            href="https://twitter.com"
+            href="https://x.com/sahynex?t=x9L3bvGfqIe7_zmIALHjtg&s=09"
             target="_blank"
             className="hover:text-yellow-400"
           >

@@ -6,7 +6,8 @@ import TopBar from "@/Components/Topbar";
 import ConnectFooter from "@/Components/ConnectFooter";
 import BottomBar from "@/Components/BottomBar";
 import Footer from "@/Components/Footer";
-import ScrollToHash from "@/Components/scrollToHash"
+import ScrollToHash from "@/Components/scrollToHash";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Sahynex",
-  description: "Sahynex is a leading IT solutions provider, specializing in innovative software development, cloud services, and digital transformation.",
+  description:
+    "Sahynex is a leading IT solutions provider, specializing in innovative software development, cloud services, and digital transformation.",
 };
 
 export default function RootLayout({
@@ -37,17 +39,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning
+      <body
+        suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${poppins.variable} antialiased`}
-        style={{ fontFamily: "var(--font-raleway), var(--font-poppins), var(--font-geist-sans), sans-serif" }}
+        style={{
+          fontFamily:
+            "var(--font-raleway), var(--font-poppins), var(--font-geist-sans), sans-serif",
+        }}
       >
-    <TopBar/>
-        <Header/>
+        <div className="sticky top-0 z-50">
+          <TopBar />
+          <Header />
+        </div>
         <ScrollToHash />
         {children}
-    <ConnectFooter/>
-    <Footer/>
-    <BottomBar/>
+        <ConnectFooter />
+        <Footer />
+        <BottomBar />
       </body>
     </html>
   );
