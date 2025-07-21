@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header className="bg-[#f7f7f7] px-4 md:px-6 py-4">
         <div className="flex items-center justify-between ">
-        <Link href="/">
+        <Link href="/" className="ml-2">
   <Image
     src="/logo/sahynex.svg"
     alt="Sahynex Logo"
