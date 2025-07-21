@@ -24,17 +24,19 @@ const Header = () => {
 
   return (
     <header className="bg-[#f7f7f7] px-4 md:px-6 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between ">
         <Link href="/">
-          <Image
-            src="/logo/sahynex.svg"
-            alt="Sahynex Logo"
-            width={160}
-            height={50}
-            className="h-auto w-auto"
-            priority
-          />
-        </Link>
+  <Image
+    src="/logo/sahynex.svg"
+    alt="Sahynex Logo"
+    width={160}
+    height={50}
+    className="w-[100px] h-auto sm:w-[120px]  md:w-[160px]"
+    priority
+  />
+</Link>
+
+
 
         <nav className="hidden md:flex items-center space-x-6">
           <Link href="/" className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors">
