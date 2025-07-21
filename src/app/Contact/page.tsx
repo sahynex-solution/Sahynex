@@ -84,24 +84,28 @@ const ContactForm: FC = () => {
                 type="text"
                 placeholder="Name"
                 name="name"
+                required
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition "
               />
               <input
                 type="email"
                 placeholder="Email"
                 name="email"
+                required
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition"
               />
               <input
                 type="tel"
                 placeholder="Phone"
                 name="phone"
+                required
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition"
               />
               <textarea
                 placeholder="Your Message"
                 name="message"
                 rows={4}
+                required
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition resize-none"
               />
               {message && (
