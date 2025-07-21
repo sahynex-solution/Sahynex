@@ -1,17 +1,28 @@
-import { NextRequest, NextResponse } from 'next/server';
-import connect from '@/utils/db';
+import { NextResponse } from 'next/server';
+import dbConnect from '@/utils/db';
 import Contact from '@/models/Contact';
 
-export async function POST(req: NextRequest) {
+export async function POST(request: Request) {
     try {
-        await connect();
-        const body = await req.json();
+        await dbConnect();
+        const body = await request.json();
         const { name, email, phone, message } = body;
-        const newContact = new Contact({ name, email, phone, message });
-        await newContact.save();
-        return NextResponse.json({ message: 'Contact form submitted successfully!' }, { status: 200 });
-    } catch (error: any) {
-        console.error('Error submitting contact form:', error);
-        return NextResponse.json({ error: error.message || 'Failed to submit contact form' }, { status: 500 });
+
+        if (!name || !email || !phone || !message) {
+            return NextResponse.json({ success: false, error: 'Missing required fields' }, { status: 400 });
+        }
+
+        const newContact = await Contact.create({
+            name,
+            email,
+            phone,
+            message,
+        });
+
+        return NextResponse.json({ success: true, data: newContact }, { status: 201 });
+    } catch (error) {
+        console.error('Error in contact API:', error);
+        const errorMessage = error instanceof Error ? error.message : 'An unknown error occurred';
+        return NextResponse.json({ success: false, error: 'Server Error', details: errorMessage }, { status: 500 });
     }
 }

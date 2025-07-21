@@ -12,6 +12,8 @@ const ContactSchema: Schema<IContact> = new Schema({
     email: { type: String, required: true },
     phone: { type: String, required: true },
     message: { type: String, required: true },
+}, {
+    timestamps: true
 });
 
 const Contact: Model<IContact> = mongoose.models.Contact || mongoose.model<IContact>('Contact', ContactSchema);
