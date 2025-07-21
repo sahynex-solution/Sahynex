@@ -1,20 +1,21 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
+import 'swiper/css/navigation';
 const Carousel = () => {
   return (
-    <div className="w-full h-[300px] sm:h-[400px] md:h-[100vh] relative">
+    <div className="w-full h-[160px] sm:h-[200px] md:h-[260px] lg:h-[300px] relative">
       <Swiper
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
         slidesPerView={1}
         loop
         autoplay={{ delay: 4000 }}
         pagination={{ clickable: true }}
+        navigation 
         className="w-full h-full"
       >
         <SwiperSlide>

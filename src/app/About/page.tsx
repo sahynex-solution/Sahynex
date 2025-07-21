@@ -136,71 +136,53 @@ const AboutPage = () => {
           </h2>
 
     {/* Leaders Grid */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      {[
-        {
-          name: "Dr. Manjunath Bhandary",
-          title: "Founder & Managing Director",
-          image: "/images/leaders/manjunath.png",
-        },
-        {
-          name: "Dr. Sudheer Shetty",
-          title: "Director",
-          image: "/images/leaders/sudheer.jpg",
-        },
-        // {
-        //   name: "Dr. Shamantha Rai B",
-        //   title: "Director",
-        //   image: "/images/leaders/shamantha.jpg",
-        // },
-        {
-          name: "Dr. Rithesh Pakkala P.",
-          title: "CEO",
-          image: "/images/leaders/rithesh.png",
-        },
-        // {
-        //   name: "Dr. Duddela Sai Prashanth",
-        //   title: "Advisor",
-        //   image: "/images/leaders/prashanth.png",
-        // },
-        // {
-        //   name: "Mr. Harisha",
-        //   title: "Advisor",
-        //   image: "/images/leaders/harisha.png",
-        // },
-        {
-          name: "Mr. Vasudeva Rao P V",
-          title: "Advisor",
-          image: "/images/leaders/vasudeva.jpg",
-        },
-        // {
-        //   name: "Shreekara B",
-        //   title: "sahynex",
-        //   image: "/images/leaders/shreekara.png",
-        // },
-      ].map((leader, index) => (
-        <div
-          key={index}
-          className="bg-[#f9f9f9] rounded-xl shadow-lg p-4 flex flex-col items-center text-center hover:shadow-xl transition-shadow"
-        >
-          {/* ✅ Perfectly Equal Size Container */}
-          <div className="relative w-[220px] h-[220px] mb-4">
-            <Image
-              src={leader.image}
-              alt={leader.name}
-              fill
-              className="rounded-lg object-cover"
-            />
-          </div>
-          <h3 className="text-[#0e1f51] font-semibold text-lg">
-            {leader.name}
-          </h3>
-          <p className="text-[#EB505A] text-sm font-medium">
-            {leader.title}
-          </p>
-        </div>
-      ))}
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 px-4 sm:px-8">
+  {[
+    {
+      name: "Dr. Manjunath Bhandary",
+      title: "Founder & Managing Director",
+      image: "/images/leaders/manjunath.png",
+    },
+    {
+      name: "Dr. Sudheer Shetty",
+      title: "Director",
+      image: "/images/leaders/sudheer.jpg",
+    },
+    {
+      name: "Dr. Rithesh Pakkala P.",
+      title: "CEO",
+      image: "/images/leaders/rithesh.png",
+    },
+    {
+      name: "Dr. Shamanth Rai",
+      title: "Director & COO",
+      image: "/images/leaders/shamantha.jpg",
+    },
+    {
+      name: "Mr.Harish A",
+      title: "CIO",
+      image: "/images/leaders/harisha.png",
+    },
+  ].map((leader, index) => (
+    <div
+      key={index}
+      className="bg-[#f9f9f9] rounded-xl shadow-lg p-4 flex flex-col items-center text-center hover:shadow-xl transition-shadow"
+    >
+      {/* Image Container - Perfect Square, Responsive */}
+      <div className="relative w-full aspect-square mb-4 max-w-[220px]">
+        <Image
+          src={leader.image}
+          alt={leader.name}
+          fill
+          className="rounded-lg object-cover"
+        />
+      </div>
+      <h3 className="text-[#0e1f51] font-semibold text-lg">{leader.name}</h3>
+      <p className="text-[#EB505A] text-sm font-medium">{leader.title}</p>
     </div>
+  ))}
+</div>
+
   </div>
 </section>
 

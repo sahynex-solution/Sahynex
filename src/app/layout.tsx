@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+      <body suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${poppins.variable} antialiased`}
         style={{ fontFamily: "var(--font-raleway), var(--font-poppins), var(--font-geist-sans), sans-serif" }}
       >
