@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import {
   Linkedin,
@@ -13,15 +13,16 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
+  const [subscriptionMessage, setSubscriptionMessage] = useState("");
   return (
     <footer className="bg-[#0d1440] text-white py-16 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
         <div>
           <p className="mb-4 leading-relaxed text-gray-300 mt-8">
-          At Sahynex, we believe clarity in design and function leads to products that users truly connect with and inspire innovation in every interaction.
+            At Sahynex, we believe clarity in design and function leads to products that users truly connect with and inspire innovation in every interaction.
           </p>
           <div className="flex gap-4 mt-6">
-             <SocialIcon
+            <SocialIcon
               href="https://www.linkedin.com/company/sahynex/"
               icon={<Linkedin className="w-5 h-5" />}
             />
@@ -80,11 +81,34 @@ export default function Footer() {
           <h4 className="text-white font-semibold mb-1">Subscribe Us</h4>
           <div className="w-10 h-1 bg-red-500 mb-4 rounded"></div>
           <p className="text-gray-300 mb-4 leading-relaxed">
-          Subscribe to our periodic newsletter for updates on innovations, client stories, and more from the team at Sahynex.
+            Subscribe to our periodic newsletter for updates on innovations, client stories, and more from the team at Sahynex.
           </p>
-          <form className="flex flex-col gap-3">
+          <form className="flex flex-col gap-3" onSubmit={async (e) => {
+            e.preventDefault();
+            const form = e.currentTarget;
+            const email = form.email.value;
+            if (!email) return;
+            setSubscriptionMessage("");
+            try {
+              const res = await fetch('/api/subscription', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email }),
+              });
+              const data = await res.json();
+              if (res.status === 201) {
+                setSubscriptionMessage('Thank you for subscribing!');
+                form.reset();
+              } else {
+                setSubscriptionMessage(data.error || 'Subscription failed.');
+              }
+            } catch (err) {
+              setSubscriptionMessage('Subscription failed.');
+            }
+          }}>
             <input
               type="email"
+              name="email"
               placeholder="Email"
               className="px-4 py-2 rounded-md text-black bg-white focus:outline-none"
             />
@@ -95,6 +119,9 @@ export default function Footer() {
               Submit
             </button>
           </form>
+          {subscriptionMessage && (
+            <p className={`mt-2 text-sm ${subscriptionMessage.startsWith('Thank') ? 'text-green-400' : 'text-red-400'}`}>{subscriptionMessage}</p>
+          )}
         </div>
       </div>
     </footer>
