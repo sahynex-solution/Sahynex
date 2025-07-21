@@ -42,7 +42,7 @@ const ContactForm: FC = () => {
     };
 
     try {
-      const response = await fetch('/api/contact', { // Call the API route
+      const response = await fetch('/apis/contact', { // Call the API route
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
