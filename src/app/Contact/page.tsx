@@ -9,8 +9,62 @@ import {
   FaFacebookF,
   FaTwitter,
 } from "react-icons/fa";
+import { useState } from 'react'; // Import useState
+
+interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}
 
 const ContactForm: FC = () => {
+  const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setMessage('');
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+    const name = formData.get('name') as string;
+    const email = formData.get('email') as string;
+    const phone = formData.get('phone') as string;
+    const messageText = formData.get('message') as string;
+
+    const contactData: ContactFormData = {
+      name,
+      email,
+      phone,
+      message: messageText,
+    };
+
+    try {
+      const response = await fetch('/api/contact', { // Call the API route
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(contactData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setMessage('Thank you for your message! We will get back to you soon.');
+        form.reset(); // Clear the form
+      } else {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+    } catch (error: any) {
+      setMessage(`Error: ${error.message}`);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section className="bg-gradient-to-br from-[#2C2F7D] to-[#431344] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
@@ -25,32 +79,38 @@ const ContactForm: FC = () => {
 
         <div className="grid md:grid-cols-2 gap-10">
           <div className="bg-gradient-to-br from-[#ebeefa] to-[#F8E2E6] rounded-lg p-6 sm:p-8 shadow-lg border border-white/20">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="Name"
+                name="name"
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition "
               />
               <input
                 type="email"
                 placeholder="Email"
+                name="email"
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition"
               />
               <input
                 type="tel"
                 placeholder="Phone"
+                name="phone"
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition"
               />
               <textarea
                 placeholder="Your Message"
+                name="message"
                 rows={4}
                 className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition resize-none"
               />
-              <button
-                type="submit"
-                className="bg-[#EB505A] hover:bg-[#e03e4b] transition-colors text-white font-semibold px-6 py-3 rounded-md w-full"
-              >
-                Send Now
+              {message && (
+                <p className={`text-center ${message.startsWith('Error') ? 'text-red-500' : 'text-green-500'}`}>
+                  {message}
+                </p>
+              )}
+              <button type="submit" disabled={isSubmitting} className={`bg-[#EB505A] hover:bg-[#e03e4b] transition-colors text-white font-semibold px-6 py-3 rounded-md w-full ${isSubmitting ? 'opacity-50 cursor-not-allowed' : ''}`}>
+                {isSubmitting ? 'Sending...' : 'Send Now'}
               </button>
             </form>
           </div>
@@ -100,7 +160,7 @@ const ContactForm: FC = () => {
                 Follow us
               </h3>
               <div className="flex space-x-4">
-                 <Link href="https://www.linkedin.com/company/sahynex/" target="_blank">
+                <Link href="https://www.linkedin.com/company/sahynex/" target="_blank">
                   <div className="p-2 bg-[#EB505A] rounded-md text-white hover:bg-[#e03e4b] cursor-pointer">
                     <FaLinkedinIn size={20} />
                   </div>
