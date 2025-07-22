@@ -45,7 +45,7 @@ const ContactForm: FC = () => {
     };
 
     try {
-      const response = await fetch('/apis/contact', { // Call the API route
+      const response = await fetch('/apis/contact', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -58,18 +58,18 @@ const ContactForm: FC = () => {
      if (response.ok) {
   toast.success('🎉 Message sent successfully!', {
     position: 'top-center',
-    autoClose: 3000,
+    autoClose: 4000,
     theme: 'dark',
     transition: Bounce,
   });
-  form.reset(); // Clear the form
+  form.reset(); 
 } else {
   throw new Error(data.error || 'Failed to submit form');
 }
 
     } catch (error: any) {toast.error(`🚨 ${error.message}`, {
   position: 'top-center',
-  autoClose: 3000,
+  autoClose: 4000,
   theme: 'dark',
   transition: Bounce,
 });
