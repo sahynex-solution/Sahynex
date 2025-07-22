@@ -26,14 +26,14 @@ const LeadersGrid = () => {
       image: "/images/leaders/sudheer.jpg",
     },
     {
-      name: "Dr. Rithesh Pakkala P.",
-      title: "CEO",
-      image: "/images/leaders/rithesh.png",
-    },
-    {
       name: "Dr. Shamanth Rai",
       title: "Director & COO",
       image: "/images/leaders/shamantha.jpg",
+    },
+    {
+      name: "Dr. Rithesh Pakkala P.",
+      title: "CEO",
+      image: "/images/leaders/rithesh.png",
     },
     {
       name: "Mr.Harish A",
