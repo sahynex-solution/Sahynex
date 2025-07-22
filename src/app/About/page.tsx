@@ -45,9 +45,9 @@ const AboutPage = () => {
               <p className="text-[#2B2B4F] font-semibold text-base mb-1">
                 Get Instant Professional Advice
               </p>
-              <p className="text-[#EB505A] text-sm">
-                Ready to Help : <span className="font-bold">+1 356 678 7897</span>
-              </p>
+                <p className="text-[#EB505A] text-sm">
+                Ready to Help : <a href="tel:+918762205219" className="font-bold">+91 8762205219</a>
+                </p>
             </div>
           </div>
           {/* <a

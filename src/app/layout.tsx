@@ -8,7 +8,6 @@ import BottomBar from "@/Components/BottomBar";
 import Footer from "@/Components/Footer";
 import ScrollToHash from "@/Components/scrollToHash";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,16 +19,42 @@ const geistMono = Geist_Mono({
 });
 
 const raleway = Raleway({ variable: "--font-raleway", subsets: ["latin"] });
+
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["400", "600", "700"], // specify weights you need
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
   title: "Sahynex",
   description:
     "Sahynex is a leading IT solutions provider, specializing in innovative software development, cloud services, and digital transformation.",
+  openGraph: {
+    title: "Sahynex - Innovative IT Solutions",
+    description:
+      "Explore Sahynex's software services, cloud solutions, and digital expertise tailored to transform businesses.",
+    url: "https://sahynex.com",
+    siteName: "Sahynex",
+    images: [
+      {
+        url: "https://sahynex.vercel.app/logo/sahynex.svg", // Replace with actual image URL
+        width: 1200,
+        height: 630,
+        alt: "Sahynex - Innovative IT Solutions",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sahynex - Innovative IT Solutions",
+    description:
+      "Explore Sahynex's software services, cloud solutions, and digital expertise tailored to transform businesses.",
+    images: ["https://sahynex.vercel.app/logo/sahynex.svg"], // Replace with actual image URL
+    creator: "@sahynex", // Optional: your Twitter handle
+  },
 };
 
 export default function RootLayout({
