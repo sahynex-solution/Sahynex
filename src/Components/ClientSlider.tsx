@@ -37,6 +37,15 @@ const clients = [
       bgColor: "bg-[#4A90E2] text-white", // Blue card
       quoteColor: "text-white", // White quote
     },
+    {
+      name: "Coding Key LLP",
+      title: "A Tech Company",
+      testimonial:
+        "Their team brought structure, speed, and serious skill to our project. Truly impressive work ethic and expertise.",
+      image: "/images/clients/cod.png",
+      bgColor: "bg-[#4A90E2] text-white", // Blue card
+      quoteColor: "text-white", // White quote
+    },
   
   
 ];
