@@ -9,7 +9,10 @@ import {
   FaFacebookF,
   FaTwitter,
 } from "react-icons/fa";
-import { useState } from 'react'; // Import useState
+import { useState } from 'react';
+import { toast, ToastContainer, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 interface ContactFormData {
   name: string;
@@ -42,7 +45,7 @@ const ContactForm: FC = () => {
     };
 
     try {
-      const response = await fetch('/apis/contact', { // Call the API route
+      const response = await fetch('/apis/contact', { 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -52,14 +55,25 @@ const ContactForm: FC = () => {
 
       const data = await response.json();
 
-      if (response.ok) {
-        setMessage('Thank you for your message! We will get back to you soon.');
-        form.reset(); // Clear the form
-      } else {
-        throw new Error(data.error || 'Failed to submit form');
-      }
-    } catch (error: any) {
-      setMessage(`Error: ${error.message}`);
+     if (response.ok) {
+  toast.success('🎉 Message sent successfully!', {
+    position: 'top-center',
+    autoClose: 4000,
+    theme: 'dark',
+    transition: Bounce,
+  });
+  form.reset(); 
+} else {
+  throw new Error(data.error || 'Failed to submit form');
+}
+
+    } catch (error: any) {toast.error(`🚨 ${error.message}`, {
+  position: 'top-center',
+  autoClose: 4000,
+  theme: 'dark',
+  transition: Bounce,
+});
+
     } finally {
       setIsSubmitting(false);
     }
@@ -169,7 +183,7 @@ const ContactForm: FC = () => {
                     <FaLinkedinIn size={20} />
                   </div>
                 </Link>
-                <Link href="https://instagram.com" target="_blank">
+                <Link href="https://www.instagram.com/sahynex?igsh=NXMycTJrYjZ5bW42" target="_blank">
                   <div className="p-2 bg-[#EB505A] rounded-md text-white hover:bg-[#e03e4b] cursor-pointer">
                     <FaInstagram size={20} />
                   </div>
@@ -179,7 +193,7 @@ const ContactForm: FC = () => {
                     <FaFacebookF size={20} />
                   </div>
                 </Link>
-                <Link href="https://twitter.com" target="_blank">
+                <Link href="https://x.com/sahynex?t=x9L3bvGfqIe7_zmIALHjtg&s=09" target="_blank">
                   <div className="p-2 bg-[#EB505A] rounded-md text-white hover:bg-[#e03e4b] cursor-pointer">
                     <FaTwitter size={20} />
                   </div>
@@ -189,7 +203,9 @@ const ContactForm: FC = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </section>
+
   );
 };
 

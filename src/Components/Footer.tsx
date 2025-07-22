@@ -27,7 +27,7 @@ export default function Footer() {
               icon={<Linkedin className="w-5 h-5" />}
             />
             <SocialIcon
-              href="https://instagram.com"
+              href="https://www.instagram.com/sahynex?igsh=NXMycTJrYjZ5bW42"
               icon={<Instagram className="w-5 h-5" />}
             />
             <SocialIcon
@@ -35,7 +35,7 @@ export default function Footer() {
               icon={<Facebook className="w-5 h-5" />}
             />
             <SocialIcon
-              href="https://twitter.com"
+              href="https://x.com/sahynex?t=x9L3bvGfqIe7_zmIALHjtg&s=09"
               icon={<Twitter className="w-5 h-5" />}
             />
           </div>

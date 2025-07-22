@@ -17,15 +17,22 @@ const TopBar = () => {
           </Link>
         </div>
 
-        {/* Right: Socials + Language */}
-        <div className="flex items-center gap-3 flex-wrap justify-end">
-          <Link href="https://instagram.com" target="_blank" className="hover:text-yellow-400">
+        <div className="hidden sm:flex items-center flex-wrap justify-center gap-3">
+          <Link
+            href="https://www.instagram.com/sahynex?igsh=NXMycTJrYjZ5bW42"
+            target="_blank"
+            className="hover:text-yellow-400"
+          >
             <FaInstagram size={14} />
           </Link>
-          {/* <Link href="https://facebook.com" target="_blank" className="hover:text-yellow-400">
+          <Link href="https://facebook.com" target="_blank" className="hover:text-yellow-400">
             <FaFacebookF size={14} />
-          </Link> */}
-          <Link href="https://twitter.com" target="_blank" className="hover:text-yellow-400">
+          </Link>
+          <Link
+            href="https://x.com/sahynex?t=x9L3bvGfqIe7_zmIALHjtg&s=09"
+            target="_blank"
+            className="hover:text-yellow-400"
+          >
             <FaTwitter size={14} />
           </Link>
           <Link href="https://www.linkedin.com/company/sahynex" target="_blank" className="hover:text-yellow-400">
@@ -36,7 +43,7 @@ const TopBar = () => {
             className="flex items-center gap-1 border border-white rounded-full px-3 py-1 hover:bg-white hover:text-black transition text-xs"
           >
             <IoGlobeOutline size={8} />En
-           {/* <span>English</span> */}
+           <span>English</span>
           </Link>
         </div>
       </div>
