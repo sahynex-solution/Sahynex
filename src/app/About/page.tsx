@@ -2,20 +2,16 @@
 
 import Image from "next/image";
 import React from "react";
-import { Lightbulb, Target } from "lucide-react";
-import Link from "next/link";
-import ClientSlider from "@/Components/ClientSlider"; // ✅ We'll create this separately
+import ClientSlider from "@/Components/ClientSlider"; 
 import LeadersGrid from "@/Components/LeadersGrid";
+import WhatwedoAbout from "@/Components/WhatwedoAbout";
 
 const AboutPage = () => {
   return (
-    <div>
-      {/* ✅ Hero Section */}
+    <div className="">
       <section className="relative py-20 px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-12">
-        {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[rgba(255,62,84,0.84)] opacity-20"></div>
 
-        {/* Left Image */}
         <div className="relative lg:w-1/2 w-full flex justify-center z-10">
           <Image
             src="/images/slide1.jpg"
@@ -26,7 +22,6 @@ const AboutPage = () => {
           />
         </div>
 
-        {/* Right Content */}
         <div className="relative lg:w-1/2 w-full flex flex-col justify-center lg:pl-12 z-10">
           <p className="text-[#EB505A] text-base font-semibold mb-2 flex items-center gap-2">
             <span className="text-[#EB505A]">\</span>
@@ -60,8 +55,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* ✅ About Sahynex Section */}
-      <div className="bg-white mt-10 mb-10 py-25 px-4">
+      <div className="bg-white mt-0 mb-0 py-25 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500 ">About Sahynex</h2>
           <p className="text-gray-800 text-base md:text-lg leading-relaxed">
@@ -71,68 +65,10 @@ const AboutPage = () => {
       </div>
 
 
-      {/* ✅ What We Do Section */}
-      <section className="bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3] py-20 px-6 md:px-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
-          <div className="rounded-2xl overflow-hidden shadow-lg h-full flex justify-center items-center">
-            <Image
-              src="/images/what-we-do.jpg"
-              alt="Developer at work"
-              width={600}
-              height={400}
-              className="object-cover w-full h-full"
-            />
-          </div>
-          <div className="flex flex-col justify-between h-full">
-            <div>
-              <p className="text-red-500 font-semibold mb-3 text-[16px]">
-                \ What We Do \
-              </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] leading-tight mb-5">
-                We Develop Product That <br /> People Love to Use.
-              </h2>
-              <p className="text-gray-700 mb-4 max-w-xl text-[15.5px] leading-relaxed">
-              At Sahynex, we craft digital products that not only solve real-world problems but are truly loved by users. With every client collaboration, we bring together design, technology, and strategy to deliver impactful solutions that stand out.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-white p-5 rounded-xl shadow flex items-start gap-4">
-                <div className="bg-red-100 p-2.5 rounded-full text-red-500">
-                  <Lightbulb className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="text-red-600 font-semibold text-base">Our Vision</h4>
-                  <p className="text-sm text-gray-600">
-                  Be A Trusted innovation partner for businesses
-                  </p>
-                </div>
-              </div>
-              <div className="bg-white p-5 rounded-xl shadow flex items-start gap-4">
-                <div className="bg-red-100 p-2.5 rounded-full text-red-500">
-                  <Target className="w-6 h-6" />
-                </div>
-                <div>
-                  <h4 className="text-red-600 font-semibold text-base">Our Goal</h4>
-                  <p className="text-sm text-gray-600">
-                  To develop and deliver world-class products 
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* <Link
-              href="/About"
-              className="text-sm font-semibold text-[#0e1f51] hover:text-[#EB505A] flex items-center gap-1"
-            >
-              <span>READ MORE</span>
-            </Link> */}
-          </div>
-        </div>
-      </section>
-
+      <WhatwedoAbout/>
       <LeadersGrid/>
 
-      {/* ✅ Our Clients Section (Gradient Overlay) */}
-      <section id="clients" className="relative pt-6 pb-16 px-6 md:px-16">
+      <section id="clients" className="relative pt-6 pb-16 px-6 md:px-16 ">
         <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[rgba(255,62,84,0.84)] opacity-20"></div>
         <div className="relative max-w-6xl mx-auto text-center z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mb-0">
