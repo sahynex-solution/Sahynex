@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const TopBar = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-[#5C7FE0] via-[#745087] to-[#ff0000] text-white text-xs sm:text-sm px-4 sm:px-8 py-4">
+    <div className="w-full bg-gradient-to-r from-[#5C7FE0] via-[#745087] to-[#ff0000] text-white text-xs sm:text-sm px-4 sm:px-8 py-1.5">
       <div className="flex justify-between items-center gap-2">
         {/* Left: Email with icon */}
         <div className="flex items-center gap-2 whitespace-nowrap">
