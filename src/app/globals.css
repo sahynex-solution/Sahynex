@@ -36,7 +36,22 @@ p{
 }
 
 
-.swiper-button-next,
-.swiper-button-prev {
-  display: none !important;
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+  opacity: 1;
+}
+
+.testimonial-carousel .swiper-pagination-bullet {
+  background-color: black !important; 
+  opacity: 0.5;
+}
+
+.testimonial-carousel .swiper-pagination-bullet-active {
+  background-color: black !important; 
+  opacity: 1;
 }

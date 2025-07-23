@@ -25,8 +25,7 @@ const Whatwedo = () => {
               </p>
 
               <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] leading-tight mb-5">
-                We Develop Product That <br />
-                People Love to Use.
+                We build what people love.
               </h2>
 
               <p className="text-gray-700 mb-4 max-w-xl text-[15.5px] leading-relaxed">
