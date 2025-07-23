@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+
 const Header = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,13 +26,14 @@ const Header = () => {
   return (
     <header className="bg-[#f7f7f7] px-4 md:px-6 py-4">
       <div className="flex items-center justify-between ">
-        <Link href="/" className="ml-6">
+        {/* Changed ml-12 to md:ml-12 to remove left margin on mobile */}
+        <Link href="/" className="ml-7 sm:ml-20 md:ml-12">
           <Image
             src="/logo/sahynex.svg"
             alt="Sahynex Logo"
             width={120}
             height={40}
-            className="w-[80px] h-auto sm:w-[100px] md:w-[120px]"
+            className="w-[115px] h-auto sm:w-[200px] md:w-[150px]"
             priority
           />
         </Link>
@@ -125,7 +127,7 @@ const Header = () => {
         </nav>
 
         <button
-          className="md:hidden focus:outline-none  "
+          className="md:hidden focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (

@@ -35,41 +35,44 @@ const Whatwedo = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               {/* Our Vision */}
-              <div className="bg-[#FFF6F6] p-2 rounded-xl shadow flex items-start gap-4">
-                <div className="bg-white p-3 rounded-md">
+              <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
+                <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image
                     src="/icons/vision-icon.svg"
                     alt="Our Vision Icon"
-                    width={100}
-                    height={100}
+                    width={48}
+                    height={48}
+                    className="w-10 h-10 sm:w-12 sm:h-12"
                   />
                 </div>
-                <div>
-                  <h4 className="text-red-600 font-semibold text-base">
+                <div className="flex flex-col justify-center">
+                  <h4 className="text-red-600 font-semibold text-base mb-1">
                     Our Vision
                   </h4>
-                  <p className="text-sm text-[#0e1f51]">
+                  <p className="text-sm text-[#0e1f51] leading-snug">
                     Be a trusted innovation partner for businesses
                   </p>
                 </div>
               </div>
 
-              <div className="bg-[#FFF6F6] p-2 rounded-xl shadow flex items-start gap-4">
-                <div className="bg-white p-3 rounded-md">
+              {/* Our Goal */}
+              <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
+                <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image
                     src="/icons/goal-icon.svg"
                     alt="Our Goal Icon"
-                    width={100}
-                    height={100}
+                    width={48}
+                    height={48}
+                    className="w-10 h-10 sm:w-12 sm:h-12"
                   />
                 </div>
-                <div>
-                  <h4 className="text-red-600 font-semibold text-base">
+                <div className="flex flex-col justify-center">
+                  <h4 className="text-red-600 font-semibold text-base mb-1">
                     Our Goal
                   </h4>
-                  <p className="text-sm text-[#0e1f51]">
+                  <p className="text-sm text-[#0e1f51] leading-snug">
                     To develop and deliver world-class products
                   </p>
                 </div>

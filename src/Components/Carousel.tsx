@@ -79,21 +79,21 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="relative w-full h-full">
             <Image
-              src="/images/slide1.jpg"
-              alt="Slide 1"
+              src="/images/slide2.jpg"
+              alt="Creative Marketing Services"
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-              priority
             />
 
             <div className="absolute inset-0 bg-gradient-to-r from-[#5C7FE0]/50 via-[#745087]/30 to-[#ff0038]/50 flex items-end">
-              <div className="p-4 sm:p-8 text-white max-w-md sm:max-w-lg space-y-2">
+              <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
                 <p className="text-yellow-400 text-lg sm:text-xl md:text-2xl font-semibold">
                   IT Solutions
                 </p>
                 <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
-                  Marketing Solutions
+                  Creative <br />
+                  <span className="block">Marketing Services</span>
                 </h1>
               </div>
             </div>
