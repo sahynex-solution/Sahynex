@@ -55,24 +55,21 @@ const Carousel = () => {
           <div className="relative w-full h-full">
             <Image
               src="/images/slide1.jpg"
-              alt="Slide 1"
+              alt="IT Solutions Slide"
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
               priority
             />
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-start">
-              <div className="px-4 sm:px-8 md:px-12 max-w-md sm:max-w-lg text-white space-y-2">
-                <p className="text-yellow-400 text-sm font-medium">
+
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5C7FE0]/50 via-[#745087]/30 to-[#ff0038]/50 flex items-end">
+              <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
+                <p className="text-yellow-400 text-lg sm:text-xl md:text-2xl font-semibold">
                   IT Solutions
                 </p>
-                <h1 className="text-lg sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight">
-                  Professional IT <br className="block sm:hidden" />
-                  <span className="sm:hidden">Services for Business</span>
-                  <span className="hidden sm:inline">
-                    {" "}
-                    Services for Business
-                  </span>
+                <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
+                  Professional IT <br />
+                  <span className="block">Services for Business</span>
                 </h1>
               </div>
             </div>
@@ -82,19 +79,21 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="relative w-full h-full">
             <Image
-              src="/images/slide1.jpg"
-              alt="Slide 2"
+              src="/images/slide2.jpg"
+              alt="Creative Marketing Services"
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
             />
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-start">
-              <div className="px-4 sm:px-8 md:px-12 max-w-md sm:max-w-lg text-white space-y-2">
-                <p className="text-yellow-400 text-sm font-medium">
+
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5C7FE0]/50 via-[#745087]/30 to-[#ff0038]/50 flex items-end">
+              <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
+                <p className="text-yellow-400 text-lg sm:text-xl md:text-2xl font-semibold">
                   IT Solutions
                 </p>
-                <h1 className="text-lg sm:text-3xl md:text-5xl font-bold leading-snug sm:leading-tight">
-                  Marketing Solutions
+                <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
+                  Creative <br />
+                  <span className="block">Marketing Services</span>
                 </h1>
               </div>
             </div>

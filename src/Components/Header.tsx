@@ -2,8 +2,9 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import { Menu, X } from "lucide-react"; 
+import { Menu, X } from "lucide-react";
 import { ChevronDown, ChevronUp } from "lucide-react";
+
 const Header = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,38 +25,51 @@ const Header = () => {
 
   return (
     <header className="bg-[#f7f7f7] px-4 md:px-6 py-4">
-        <div className="flex items-center justify-between ">
-        <Link href="/" className="ml-2">
-  <Image
-    src="/logo/sahynex.svg"
-    alt="Sahynex Logo"
-    width={160}
-    height={50}
-    className="w-[100px] h-auto sm:w-[120px]  md:w-[160px]"
-    priority
-  />
-</Link>
-
-
+      <div className="flex items-center justify-between ">
+        {/* Changed ml-12 to md:ml-12 to remove left margin on mobile */}
+        <Link href="/" className="ml-7 sm:ml-20 md:ml-12">
+          <Image
+            src="/logo/sahynex.svg"
+            alt="Sahynex Logo"
+            width={120}
+            height={40}
+            className="w-[115px] h-auto sm:w-[200px] md:w-[150px]"
+            priority
+          />
+        </Link>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <Link href="/" className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors">
+          <Link
+            href="/"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+          >
             Home
           </Link>
 
-          <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <div
+            className="relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <button
               className="text-[#0e1f51] hover:text-[#EB505A] font-medium flex items-center transition-colors"
               onClick={() => setIsAboutOpen(!isAboutOpen)}
             >
               About Us
               <svg
-                className={`ml-1 h-4 w-4 transition-transform ${isAboutOpen ? "rotate-180" : ""}`}
+                className={`ml-1 h-4 w-4 transition-transform ${
+                  isAboutOpen ? "rotate-180" : ""
+                }`}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
 
@@ -64,7 +78,7 @@ const Header = () => {
                 <Link
                   href="/About"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
-                  onClick={() => setIsAboutOpen(false)}                
+                  onClick={() => setIsAboutOpen(false)}
                 >
                   About Us
                 </Link>
@@ -86,13 +100,22 @@ const Header = () => {
             )}
           </div>
 
-          <Link href="/Services" className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors">
+          <Link
+            href="/Services"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+          >
             Our Services
           </Link>
-          <Link href="/Career" className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors">
+          <Link
+            href="/Career"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+          >
             Career
           </Link>
-          <Link href="/Contact" className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors">
+          <Link
+            href="/Contact"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+          >
             Contact
           </Link>
 
@@ -104,67 +127,109 @@ const Header = () => {
         </nav>
 
         <button
-          className="md:hidden focus:outline-none  "
+          className="md:hidden focus:outline-none"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? (
-    <X size={28} color="#333" /> 
-  ) : (
-    <Menu size={28} color="#333" /> 
-  )}
+            <X size={28} color="#333" />
+          ) : (
+            <Menu size={28} color="#333" />
+          )}
         </button>
       </div>
 
       {mobileMenuOpen && (
-  <div className="mt-4 space-y-4 md:hidden">
-    <Link href="/" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-      Home
-    </Link>
-
-    <div>
-      <button
-        className="text-[#0e1f51] hover:text-[#EB505A] font-medium cursor-pointer flex items-center justify-between w-full"
-        onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
-      >
-        About Us
-        {isMobileAboutOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-      </button>
-
-      {isMobileAboutOpen && (
-        <div className="pl-4 mt-2 space-y-2">
-          <Link href="/About" onClick={() => {setMobileMenuOpen(false);
-          setIsMobileAboutOpen(false)}
-          } className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
-            About Us
+        <div className="mt-4 space-y-4 md:hidden">
+          <Link
+            href="/"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+          >
+            Home
           </Link>
-          <Link href="/About#team" onClick={() => {setMobileMenuOpen(false);  setIsMobileAboutOpen(false)}} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
-            Our Team
+
+          <div>
+            <button
+              className="text-[#0e1f51] hover:text-[#EB505A] font-medium cursor-pointer flex items-center justify-between w-full"
+              onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
+            >
+              About Us
+              {isMobileAboutOpen ? (
+                <ChevronUp size={18} />
+              ) : (
+                <ChevronDown size={18} />
+              )}
+            </button>
+
+            {isMobileAboutOpen && (
+              <div className="pl-4 mt-2 space-y-2">
+                <Link
+                  href="/About"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setIsMobileAboutOpen(false);
+                  }}
+                  className="block text-sm text-[#0e1f51] hover:text-[#EB505A]"
+                >
+                  About Us
+                </Link>
+                <Link
+                  href="/About#team"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setIsMobileAboutOpen(false);
+                  }}
+                  className="block text-sm text-[#0e1f51] hover:text-[#EB505A]"
+                >
+                  Our Team
+                </Link>
+                <Link
+                  href="/About#clients"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setIsMobileAboutOpen(false);
+                  }}
+                  className="block text-sm text-[#0e1f51] hover:text-[#EB505A]"
+                >
+                  Our Clients
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <Link
+            href="/Services"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+          >
+            Our Services
           </Link>
-          <Link href="/About#clients" onClick={() => {setMobileMenuOpen(false);   setIsMobileAboutOpen(false)}} className="block text-sm text-[#0e1f51] hover:text-[#EB505A]">
-            Our Clients
+          <Link
+            href="/Career"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+          >
+            Career
+          </Link>
+          <Link
+            href="/Contact"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+          >
+            Contact
+          </Link>
+
+          <Link
+            href="/Contact"
+            onClick={() => setMobileMenuOpen(false)}
+            className="cursor-pointer"
+          >
+            <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium cursor-pointer">
+              Get In Touch
+            </button>
           </Link>
         </div>
       )}
-    </div>
-
-    <Link href="/Services" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-      Our Services
-    </Link>
-    <Link href="/Career" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-      Career
-    </Link>
-    <Link href="/Contact" onClick={() => setMobileMenuOpen(false)} className="block text-[#0e1f51] hover:text-[#EB505A] font-medium">
-      Contact
-    </Link>
-
-    <Link href="/Contact" onClick={() => setMobileMenuOpen(false)} className="cursor-pointer">
-      <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium cursor-pointer">
-        Get In Touch
-      </button>
-    </Link>
-  </div>
-)}
-
     </header>
   );
 };

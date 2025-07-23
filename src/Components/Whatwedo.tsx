@@ -1,12 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { Lightbulb, Target } from "lucide-react";
 import Link from "next/link";
 
 const Whatwedo = () => {
   return (
     <div>
-      <section className="bg-[#f9f9f9] py-20 px-6 md:px-16">
+      <section className="bg-[#FDF5F5] py-20 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           <div className="rounded-2xl overflow-hidden shadow-lg h-full">
             <Image
@@ -29,35 +28,52 @@ const Whatwedo = () => {
               </h2>
 
               <p className="text-gray-700 mb-4 max-w-xl text-[15.5px] leading-relaxed">
-              At Sahynex, we craft digital products that not only solve real-world problems but are truly loved by users. With every client collaboration, we bring together design, technology, and strategy to deliver impactful solutions that stand out.
+                At Sahynex, we craft digital products that not only solve
+                real-world problems but are truly loved by users. With every
+                client collaboration, we bring together design, technology, and
+                strategy to deliver impactful solutions that stand out.
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              <div className="bg-white p-5 rounded-xl shadow flex items-start gap-4">
-                <div className="bg-red-100 p-2.5 rounded-full text-red-500">
-                  <Lightbulb className="w-6 h-6" />
+              {/* Our Vision */}
+              <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
+                <div className="bg-white p-3 rounded-md flex-shrink-0">
+                  <Image
+                    src="/icons/vision-icon.svg"
+                    alt="Our Vision Icon"
+                    width={48}
+                    height={48}
+                    className="w-10 h-10 sm:w-12 sm:h-12"
+                  />
                 </div>
-                <div>
-                  <h4 className="text-red-600 font-semibold text-base">
+                <div className="flex flex-col justify-center">
+                  <h4 className="text-red-600 font-semibold text-base mb-1">
                     Our Vision
                   </h4>
-                  <p className="text-sm text-gray-600">
-                  Be A Trusted innovation partner for businesses
+                  <p className="text-sm text-[#0e1f51] leading-snug">
+                    Be a trusted innovation partner for businesses
                   </p>
                 </div>
               </div>
 
-              <div className="bg-white p-5 rounded-xl shadow flex items-start gap-4">
-                <div className="bg-red-100 p-2.5 rounded-full text-red-500">
-                  <Target className="w-6 h-6" />
+              {/* Our Goal */}
+              <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
+                <div className="bg-white p-3 rounded-md flex-shrink-0">
+                  <Image
+                    src="/icons/goal-icon.svg"
+                    alt="Our Goal Icon"
+                    width={48}
+                    height={48}
+                    className="w-10 h-10 sm:w-12 sm:h-12"
+                  />
                 </div>
-                <div>
-                  <h4 className="text-red-600 font-semibold text-base">
+                <div className="flex flex-col justify-center">
+                  <h4 className="text-red-600 font-semibold text-base mb-1">
                     Our Goal
                   </h4>
-                  <p className="text-sm text-gray-600">
-                  To develop and deliver world-class products 
+                  <p className="text-sm text-[#0e1f51] leading-snug">
+                    To develop and deliver world-class products
                   </p>
                 </div>
               </div>
@@ -68,8 +84,14 @@ const Whatwedo = () => {
                 href="/About"
                 className="text-sm font-semibold text-[#0e1f51] hover:text-[#EB505A] flex items-center gap-1"
               >
-                <span>READ MORE</span>
-                <span className="text-red-500 text-lg"></span>
+                <span className="underline font-semibold">READ MORE</span>
+                <Image
+                  src="/icons/more.svg"
+                  alt="arrow icon"
+                  width={10}
+                  height={10}
+                  className="inline-block"
+                />
               </Link>
             </div>
           </div>
