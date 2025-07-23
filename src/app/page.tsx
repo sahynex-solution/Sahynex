@@ -6,7 +6,7 @@ import TestimonialCarousel from '@/Components/TestimonialCarousel';
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div >
       <Carousel/>
       <Whatwedo/>
       <MarketSegments/>
