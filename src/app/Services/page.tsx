@@ -72,7 +72,14 @@ export default function Page() {
             <h1 className="text-4xl sm:text-5xl font-bold text-[#0E1F51] mb-4 leading-tight">
               Better Insights For <br /> Business Growth
             </h1>
-            <button className="bg-[#FF3E54] hover:bg-[#EB505A] text-white px-6 py-3 rounded-md text-base font-semibold mt-2">
+            <button
+              className="
+                bg-[#FF3E54] hover:bg-[#EB505A]
+                text-white px-6 py-3 rounded-md text-base font-semibold mt-2
+                mx-auto md:mx-0   /* Center on mobile, left-align on md+ */
+                block            /* Ensures mx-auto works */
+              "
+            >
               View More
             </button>
           </div>
@@ -80,24 +87,50 @@ export default function Page() {
           {/* ✅ Right Swiper Carousel (unchanged) */}
           <div className="lg:w-1/2 w-full relative flex items-center justify-center">
             {/* Left Button */}
-            <div className="absolute left-[-48px] top-1/2 -translate-y-1/2 z-20 flex items-center">
+            <div className="
+              absolute 
+              left-1 sm:left-3
+              top-1/2 -translate-y-1/2 
+              z-20 flex items-center
+            ">
               <button
-                className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow cursor-pointer border-2 border-[#FF3E54] transition hover:bg-[#FF3E54] hover:text-white"
-                onClick={() => swiperRef.current?.slidePrev()}
-                aria-label="Previous Slide"
+                className="
+    w-12 h-12 flex items-center justify-center
+    bg-white rounded-full shadow cursor-pointer
+    border-2 border-[#FF3E54]
+    text-[#FF3E54]
+    hover:bg-[#FF3E54] hover:text-white
+    transition
+  "
+  onClick={() => swiperRef.current?.slidePrev()}
               >
-                <span className="text-[#FF3E54] text-2xl font-bold">&lt;</span>
+                <span className="text-2xl font-bold">&lt;</span>
               </button>
+
+
             </div>
             {/* Right Button */}
-            <div className="absolute right-[-48px] top-1/2 -translate-y-1/2 z-20 flex items-center">
+            <div className="
+              absolute 
+              right-1 sm:right-3
+              top-1/2 -translate-y-1/2 
+              z-20 flex items-center
+            ">
+
               <button
-                className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow cursor-pointer border-2 border-[#FF3E54] transition hover:bg-[#FF3E54] hover:text-white"
-                onClick={() => swiperRef.current?.slideNext()}
-                aria-label="Next Slide"
+                className="
+    w-12 h-12 flex items-center justify-center
+    bg-white rounded-full shadow cursor-pointer
+    border-2 border-[#FF3E54]
+    text-[#FF3E54]
+    hover:bg-[#FF3E54] hover:text-white
+    transition
+  "
+  onClick={() => swiperRef.current?.slideNext()}
               >
-                <span className="text-[#FF3E54] text-2xl font-bold">&gt;</span>
+                <span className="text-2xl font-bold">&gt;</span>
               </button>
+
             </div>
 
             {/* Swiper Carousel */}
@@ -123,44 +156,39 @@ export default function Page() {
               className="w-full max-w-xl mx-auto">
               {slides.map((src, i) => (
                 <SwiperSlide
-                key={i}
-                className="!w-[280px] !h-[450px] sm:!w-[240px] sm:!h-[380px] rounded-xl overflow-visible shadow-xl relative"
-              >
-                <div className="absolute left-[-25px] top-1/2 -translate-y-1/2 z-10">
-                  <div
-                    className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
-                    style={{ clipPath: 'polygon(100% 0, 0 10%, 0 90%, 100% 100%)' }}
-                  />
-                </div>
-              
-                <div className="absolute right-[-25px] top-1/2 -translate-y-1/2 z-10">
-                  <div
-                    className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
-                    style={{ clipPath: 'polygon(0 0, 100% 10%, 100% 90%, 0% 100%)' }}
-                  />
-                </div>
-              
-                <Image
-                  src={src}
-                  alt={`Slide ${i + 1}`}
-                  width={240}
-                  height={380}
-                  className="w-[280px] h-[450px] sm:w-[240px] sm:h-[380px] object-cover rounded-xl"
-                />
-              </SwiperSlide>
-              
+                  key={i}
+                  className="!w-[280px] !h-[450px] sm:!w-[320px] sm:!h-[514px] rounded-xl overflow-visible shadow-xl relative"
+                >
+                  <div className="absolute left-[-10px] top-1/2 -translate-y-1/2 z-10">
+                    <div
+                      className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
+                      style={{ clipPath: 'polygon(100% 0, 0 10%, 0 90%, 100% 100%)' }}
+                    />
+                  </div>
 
+                  <div className="absolute right-[-10px] top-1/2 -translate-y-1/2 z-10">
+                    <div
+                      className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
+                      style={{ clipPath: 'polygon(0 0, 100% 10%, 100% 90%, 0% 100%)' }}
+                    />
+                  </div>
+
+                  <Image
+                    src={src}
+                    alt={`Slide ${i + 1}`}
+                    width={240}
+                    height={380}
+                    className="w-[280px] h-[450px] sm:w-[320px] sm:h-[514px] object-cover rounded-xl"
+                  />
+                </SwiperSlide>
               ))}
-
             </Swiper>
           </div>
         </div>
       </section>
 
-
-
       {/* Services Section */}
-      <section className="bg-white py-20 px-4 md:px-8 max-w-7xl mx-auto">
+      <section className="bg-white py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <span className="text-pink-500 font-semibold text-lg">\ Services \</span>
           <h2 className="text-4xl sm:text-5xl font-bold text-blue-900 mt-2 mb-4">Our Expertise</h2>

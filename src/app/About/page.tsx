@@ -82,7 +82,7 @@ const AboutPage = () => {
       <section id="clients" className="relative pt-6 pb-16 px-6 md:px-16 ">
         <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[rgba(255,62,84,0.84)] opacity-20"></div>
         <div className="relative max-w-6xl mx-auto text-center z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mb-0">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mt-2 mb-0">
             <span className="text-[#e80312]">Our Clients</span>
           </h2>
           <ClientSlider />
