@@ -29,8 +29,10 @@ const AboutPage = () => {
             <span className="text-[#EB505A]">\</span>
           </p>
           <h2 className="text-3xl lg:text-4xl font-bold text-blue-60 mb-4 leading-tight">
-            One of the Fastest Way to <br /> Business Growth
+            One of the Fastest Way{" "}
+            <span className="block lg:block lg:mt-1">to Business Growth</span>
           </h2>
+
           <p className="text-amber-50 text-base mb-8 max-w-xl">
             We are a passionate team committed to accelerating your business
             growth through innovative digital solutions, combining strategy,
