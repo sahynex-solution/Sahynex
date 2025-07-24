@@ -7,19 +7,20 @@ import Link from "next/link";
 const ConnectFooter = () => {
   return (
     <div className="relative w-full h-[250px] md:h-[300px] font-inter"> 
-      <div className="absolute inset-0">
-        <Image
-          src="/images/Get_In_Touch.jpg"
-          alt="Connect Banner"
-          layout="fill"
-          objectFit="cover"
-          className="z-0" 
-        />
-        {/* Layer 1: Subtle Linear Gradient from #5575EC to #FC2839 */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#5575EC]/60 to-[#FC2839]/30"></div>
-        {/* Layer 2: Light Multiply Blend */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#5575EC]/30 to-[#FC2839]/20 mix-blend-multiply"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent z-10" />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: `
+            linear-gradient(to right, rgba(85,117,236,0.6), rgba(252,40,57,0.3)),
+            linear-gradient(to right, rgba(85,117,236,0.3), rgba(252,40,57,0.2)),
+            linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.3), transparent),
+            url('/images/Get_In_Touch.jpg')
+          `,
+          backgroundBlendMode: 'normal, multiply, normal, normal',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
       </div>
 
       <div className="relative z-20 h-full w-full flex flex-row items-end justify-between px-4 sm:px-6 py-6 text-white gap-x-4">
