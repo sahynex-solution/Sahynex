@@ -130,9 +130,7 @@ export default function Page() {
               >
                 <span className="text-2xl font-bold">&gt;</span>
               </button>
-
             </div>
-
             {/* Swiper Carousel */}
             <Swiper
               modules={[Navigation, EffectCoverflow, Autoplay]}
@@ -159,20 +157,6 @@ export default function Page() {
                   key={i}
                   className="!w-[280px] !h-[450px] sm:!w-[320px] sm:!h-[514px] rounded-xl overflow-visible shadow-xl relative"
                 >
-                  <div className="absolute left-[-10px] top-1/2 -translate-y-1/2 z-10">
-                    <div
-                      className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
-                      style={{ clipPath: 'polygon(100% 0, 0 10%, 0 90%, 100% 100%)' }}
-                    />
-                  </div>
-
-                  <div className="absolute right-[-10px] top-1/2 -translate-y-1/2 z-10">
-                    <div
-                      className="w-[20px] h-full bg-gradient-to-b from-pink-400 to-pink-200 rounded-md"
-                      style={{ clipPath: 'polygon(0 0, 100% 10%, 100% 90%, 0% 100%)' }}
-                    />
-                  </div>
-
                   <Image
                     src={src}
                     alt={`Slide ${i + 1}`}
