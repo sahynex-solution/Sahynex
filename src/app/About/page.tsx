@@ -28,12 +28,12 @@ const AboutPage = () => {
             <span>About</span>
             <span className="text-[#EB505A]">\</span>
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#0e1f51] mb-4 leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4 leading-tight">
             One of the Fastest Way{" "}
             <span className="block lg:block lg:mt-1">to Business Growth</span>
           </h2>
 
-          <p className="text-base text-[#0e1f51] mb-8 max-w-xl">
+          <p className="text-base text-amber-50 mb-8 max-w-xl">
             We are a passionate team committed to accelerating your business
             growth through innovative digital solutions, combining strategy,
             design, and technology to deliver impactful results that help you
