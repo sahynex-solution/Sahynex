@@ -38,12 +38,12 @@ const MarketSegments = () => {
         </div>
         <p
           className="
-            max-w-3xl mx-auto text-gray-600 text-lg md:text-xl font-medium text-left
+            max-w-3xl mx-auto text-gray-700 text-left tracking-tight
           "
           style={{ textAlignLast: "center" }}
         >
           We tailor our solutions by understanding key customer groups based on
-          behavior, needs and industry trends—helping businesses connect better
+          behavior, needs and industry trends, helping businesses connect better
           with their audience and drive growth.
         </p>
 
