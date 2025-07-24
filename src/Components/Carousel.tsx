@@ -53,19 +53,18 @@ const Carousel = () => {
       >
         <SwiperSlide>
           <div className="relative w-full h-full">
-            <div className="relative w-full h-full">
-              {/* Background Image */}
-              <Image
-                src="/images/slide1.jpg"
-                alt="IT Solutions Slide"
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-                priority
-              />
-
-              {/* Simplified Gradient Overlay */}
-              <div
+          <div className="relative w-full h-full">
+          {/* Background Image */}
+            <Image
+              src="/images/slide1.jpg"
+              alt="IT Solutions Slide"
+              fill
+              className="object-cover"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
+              priority
+            />
+ {/* Simplified Gradient Overlay */}
+ <div
                 className="absolute inset-0"
                 style={{
                   background: `
@@ -76,8 +75,6 @@ const Carousel = () => {
                 }}
               ></div>
             </div>
-
-
             <div className="absolute inset-0 flex items-end">
               <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
                 <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
@@ -93,28 +90,21 @@ const Carousel = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative w-full h-full">
-              {/* Background Image */}
-              <Image
-                src="/images/slide3.jpg"
-                alt="IT Solutions Slide"
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-                priority
-              />
-
-              {/* Simplified Gradient Overlay */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: `
-                    linear-gradient(259deg, rgba(243,44,66,0.2) 20%, rgba(85,117,236,0.2) 80%),
-                    linear-gradient(to right, rgba(85,117,236,0.4), rgba(252,40,57,0.25))
-                  `,
-                  backgroundBlendMode: 'multiply, normal',
-                }}
-              ></div>
+          <div
+            className="relative w-full h-full flex items-end text-white"
+            style={{
+              background: `
+        linear-gradient(259.34deg, rgba(243, 44, 66, 0.24) 17.47%, rgba(85, 117, 236, 0.24) 87.02%),
+        linear-gradient(83.28deg, rgba(85, 117, 236, 0.22) 13.26%, rgba(252, 40, 57, 0.22) 81.36%),
+        linear-gradient(to right, rgba(85,117,236,0.7), rgba(252,40,57,0.3)),
+        linear-gradient(to right, rgba(252,40,57,0.7), rgba(85,117,236,0.3)),
+        url('/images/slide3.jpg')
+      `,
+              backgroundBlendMode: 'multiply, normal, multiply, multiply, normal',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
             <div className="p-4 sm:p-8 max-w-full space-y-2">
               <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
                 IT Solutions
