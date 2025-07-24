@@ -32,22 +32,20 @@ export default function ScrollToHash() {
   const pathname = usePathname();
 
   useEffect(() => {
-    // ✅ 1) Handle when navigating to a new page with a hash
     if (typeof window !== "undefined" && window.location.hash) {
-      window.scrollTo(0, 0); // jump to top first
+      window.scrollTo(0, 0); 
       setTimeout(() => {
         const element = document.querySelector(window.location.hash);
-        if (element) smoothScrollTo(element, 1000); // slower animation
-      }, 300); // wait before scrolling
+        if (element) smoothScrollTo(element, 1000);
+      }, 300); 
     }
 
-    // ✅ 2) Intercept same-page anchor clicks
     const handleClick = (e: Event) => {
       const target = e.target as HTMLAnchorElement;
       if (target.tagName === "A" && target.hash) {
         const element = document.querySelector(target.hash);
         if (element) {
-          e.preventDefault(); // stop default jump
+          e.preventDefault(); 
           smoothScrollTo(element, 1000);
         }
       }

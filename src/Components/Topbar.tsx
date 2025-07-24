@@ -6,25 +6,20 @@ const TopBar = () => {
   return (
     <div className="w-full bg-gradient-to-r from-[#5C7FE0] via-[#745087] to-[#ff0000] text-white text-xs sm:text-sm px-4 sm:px-8 py-1.5">
       <div className="flex justify-between items-center gap-2">
-        {/* Left: Email with icon */}
+    
         <div className="flex items-center gap-2 whitespace-nowrap">
           <FaEnvelope size={14} />
           <Link
-            href="mailto:sahynexsolutions@gmail.com"
-            className="hover:text-yellow-300"
+            href="mailto:info@sahynex.com"
+            className="hover:text-yellow-300 font-semibold"
           >
-            sahynexsolutions@gmail.com
+            info@sahynex.com
           </Link>
         </div>
-
-        {/* Right: Socials + Language */}
         <div className="flex items-center gap-3 flex-wrap justify-end">
           <Link href="https://instagram.com" target="_blank" className="hover:text-yellow-400">
             <FaInstagram size={14} />
           </Link>
-          {/* <Link href="https://facebook.com" target="_blank" className="hover:text-yellow-400">
-            <FaFacebookF size={14} />
-          </Link> */}
           <Link href="https://twitter.com" target="_blank" className="hover:text-yellow-400">
             <FaTwitter size={14} />
           </Link>

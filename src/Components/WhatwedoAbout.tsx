@@ -21,7 +21,7 @@ const WhatwedoAbout = () => {
                 \ What We Do \
               </p>
 
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] leading-tight mb-5">
+              <h2 className="text-[1.62rem] md:text-4xl font-bold text-[#0e1f51] leading-tight mb-5 ">
                 We build what people love.
               </h2>
 
@@ -34,7 +34,6 @@ const WhatwedoAbout = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-              {/* Our Vision */}
               <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
                 <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image
@@ -55,7 +54,6 @@ const WhatwedoAbout = () => {
                 </div>
               </div>
 
-              {/* Our Goal */}
               <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
                 <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image

@@ -12,7 +12,7 @@ const marketData = [
     image: "/images/spiritual.jpg",
   },
   {
-    title: "E-Newspapers & Magazines",
+    title: "E-Newspapers Magazines",
     description:
       "We design and develop engaging platforms for e-magazines and e-newspapers, enabling easy content publishing, reader interaction and seamless digital distribution.",
     icon: "/icons/newspaper-icon.svg",
@@ -39,10 +39,11 @@ const MarketSegments = () => {
             height={200}
           />
         </div>
-        <p className="max-w-3/4 mx-auto text-gray-600 text-base md:text-base font-normal tracking-tight ">
+        <p className="max-w-3xl mx-auto text-gray-600 text-base md:text-base font-normal text-center">
           We tailor our solutions by understanding key customer groups based on
-          behavior, needs and industry trends helping businesses connect better
-          with their audience and drive growth.</p>
+          behavior, needs and industry trends—helping businesses connect better
+          with their audience and drive growth.
+        </p>
       </div>
 
       <div className="space-y-12 max-w-6xl mx-auto">
@@ -54,17 +55,41 @@ const MarketSegments = () => {
             }`}
           >
             <div className="w-full md:hidden flex flex-col gap-6">
-              <h4 className="text-2xl font-bold text-[#EB505A] text-center">
-                {segment.title}
+              <h4 className="text-3xl font-bold text-[#EB505A] text-center">
+                {index === 0 ? (
+                  <>
+                    Organizations
+                    <br />
+                    Spiritual Centers
+                  </>
+                ) : index === 1 ? (
+                  <>
+                    E-Newspapers
+                    <br />
+                    Magazines
+                  </>
+                ) : index === 2 ? (
+                  <>
+                    Education Institution
+                    <br />
+                    Companies
+                  </>
+                ) : (
+                  segment.title
+                )}
               </h4>
 
               <div className="flex justify-center">
                 <Image
                   src={segment.icon}
                   alt="icon"
-                  width={100}
-                  height={100}
-                  className="min-w-[80px]"
+                  width={index === 0 || index === 2 ? 160 : 100}
+                  height={index === 0 || index === 2 ? 160 : 100}
+                  className={`${
+                    index === 0 || index === 2
+                      ? "min-w-[100px]"
+                      : "min-w-[80px]"
+                  }`}
                 />
               </div>
 
@@ -96,10 +121,15 @@ const MarketSegments = () => {
                 <Image
                   src={segment.icon}
                   alt="icon"
-                  width={130}
-                  height={130}
-                  className="min-w-[80px]"
+                  width={index === 0 || index === 2 ? 200 : 130}
+                  height={index === 0 || index === 2 ? 200 : 130}
+                  className={`${
+                    index === 0 || index === 2
+                      ? "min-w-[110px]"
+                      : "min-w-[80px]"
+                  }`}
                 />
+
                 <h4 className="text-2xl md:text-3xl font-bold text-[#EB505A] leading-snug">
                   {segment.title}
                 </h4>
