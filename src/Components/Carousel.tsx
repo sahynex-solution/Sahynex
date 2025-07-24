@@ -117,7 +117,7 @@ const Carousel = () => {
               ></div>
 
             <div className="absolute inset-0 flex items-end">
-              <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
+              <div className="p-4 sm:p-8 text-white max-w-full">
                 <p
                   className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold leading-snug"
                   style={{ fontFamily: "var(--font-poppins)" }}

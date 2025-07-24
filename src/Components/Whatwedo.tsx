@@ -5,8 +5,8 @@ import Link from "next/link";
 const Whatwedo = () => {
   return (
     <div>
-      <section className="bg-white py-16 px-6 md:px-16">
-        <div className="bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+      <section className="bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3] py-16 px-6 md:px-16">
+        <div className="rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           <div className="rounded-2xl overflow-hidden shadow-lg h-full">
             <Image
               src="/images/what-we-do.jpg"
