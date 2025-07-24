@@ -5,8 +5,8 @@ import Link from "next/link";
 const Whatwedo = () => {
   return (
     <div>
-      <section className="bg-[#FDF5F5] py-20 px-6 md:px-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+      <section className="bg-white py- 8 px-6 md:px-16">
+        <div className="bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           <div className="rounded-2xl overflow-hidden shadow-lg h-full">
             <Image
               src="/images/what-we-do.jpg"
@@ -43,7 +43,7 @@ const Whatwedo = () => {
                     alt="Our Vision Icon"
                     width={48}
                     height={48}
-                    className="w-10 h-10 sm:w-12 sm:h-12"
+                    className="bg-[#FFF6F6] w-10 h-10 sm:w-12 sm:h-12"
                   />
                 </div>
                 <div className="flex flex-col justify-center">
@@ -63,7 +63,7 @@ const Whatwedo = () => {
                     alt="Our Goal Icon"
                     width={48}
                     height={48}
-                    className="w-10 h-10 sm:w-12 sm:h-12"
+                    className="bg-[#FFF6F6] w-10 h-10 sm:w-12 sm:h-12"
                   />
                 </div>
                 <div className="flex flex-col justify-center">

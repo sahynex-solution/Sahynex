@@ -35,7 +35,9 @@ const ConnectFooter = () => {
             </button>
           </Link>
         </div>
+
       </div>
+
     </div>
   );
 };

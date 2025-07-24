@@ -29,8 +29,8 @@ const marketData = [
 
 const MarketSegments = () => {
   return (
-    <section className="py-12 px-6 md:px-16 bg-[#FDF5F5]">
-      <div className="text-center mb-12">
+    <section className="py-12 px-6 md:px-16 bg-white">
+      <div className="bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
         <div className="flex justify-center mb-3">
           <Image
             src="/icons/market-icon.svg"
@@ -46,11 +46,11 @@ const MarketSegments = () => {
         </p>
       </div>
 
-      <div className="space-y-12 max-w-6xl mx-auto">
+      <div className="space-y-12 max-w-7xl mx-auto">
         {marketData.map((segment, index) => (
           <div
             key={index}
-            className={`flex flex-col gap-8 items-center md:flex-row md:items-stretch ${
+            className={`bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto flex flex-col gap-8 items-center md:flex-row md:items-stretch ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
           >

@@ -34,6 +34,7 @@ const WhatwedoAbout = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              {/* Our Vision */}
               <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
                 <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image
@@ -41,7 +42,7 @@ const WhatwedoAbout = () => {
                     alt="Our Vision Icon"
                     width={48}
                     height={48}
-                    className="w-10 h-10 sm:w-12 sm:h-12"
+                    className="bg-[#FFF6F6]  w-10 h-10 sm:w-12 sm:h-12"
                   />
                 </div>
                 <div className="flex flex-col justify-center">
@@ -54,6 +55,7 @@ const WhatwedoAbout = () => {
                 </div>
               </div>
 
+              {/* Our Goal */}
               <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
                 <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image
@@ -61,7 +63,7 @@ const WhatwedoAbout = () => {
                     alt="Our Goal Icon"
                     width={48}
                     height={48}
-                    className="w-10 h-10 sm:w-12 sm:h-12"
+                    className="bg-[#FFF6F6] w-10 h-10 sm:w-12 sm:h-12"
                   />
                 </div>
                 <div className="flex flex-col justify-center">
