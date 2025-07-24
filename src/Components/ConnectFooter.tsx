@@ -11,7 +11,7 @@ const ConnectFooter = () => {
         {/* Background Image */}
         <Image
           src="/images/Get_In_Touch.jpg"
-          alt="IT Solutions Slide"
+          alt="Students in a group"
           fill
           className="object-cover z-0"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
