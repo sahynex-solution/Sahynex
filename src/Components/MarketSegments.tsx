@@ -7,7 +7,7 @@ const marketData = [
   {
     title: "Organizations Spiritual Centers",
     description:
-      "We offer websites, digital invitations, and other creative services for organizations and spiritual centers—making it easier to connect with their communities and share important moments.",
+      "We offer websites, digital invitations, and other creative services for organizations and spiritual centers making it easier to connect with their communities and share important moments.",
     icon: "/icons/temple-icon.svg",
     image: "/images/spiritual.jpg",
   },
@@ -30,23 +30,31 @@ const marketData = [
 const MarketSegments = () => {
   return (
     <section className="py-12 px-6 md:px-16 bg-white">
-      <div className="bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
+      <div className=" rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
         <div className="flex justify-center mb-3">
-          <h4 className="text-3xl font-bold text-[#EB505A] text-center">
+          <h4
+            className="text-3xl font-bold text-center"
+            style={{
+              background:
+                "linear-gradient(90deg, #111184 0%, rgba(255, 62, 84, 0.84) 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
             Market Segments
           </h4>
         </div>
         <p
           className="
-            max-w-3xl mx-auto text-gray-600 text-lg md:text-xl font-medium text-left
-          "
+    max-w-3xl mx-auto text-gray-600 text-base text-left
+  "
           style={{ textAlignLast: "center" }}
         >
           We tailor our solutions by understanding key customer groups based on
-          behavior, needs and industry trends—helping businesses connect better
+          behavior, needs and industry trends helping businesses connect better
           with their audience and drive growth.
         </p>
-
       </div>
 
       <div className="space-y-12 max-w-7xl mx-auto">
