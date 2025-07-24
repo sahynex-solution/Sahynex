@@ -39,7 +39,7 @@ const MarketSegments = () => {
             height={200}
           />
         </div>
-        <p className="max-w-3/4 mx-auto text-gray-600 text-lg md:text-xl font-medium tracking-tight">
+        <p className="max-w-3/4 mx-auto text-gray-600 text-base md:text-base font-normal tracking-tight ">
           We tailor our solutions by understanding key customer groups based on
           behavior, needs and industry trends helping businesses connect better
           with their audience and drive growth.</p>
@@ -54,7 +54,7 @@ const MarketSegments = () => {
             }`}
           >
             <div className="w-full md:hidden flex flex-col gap-6">
-              <h4 className="text-3xl font-bold text-[#EB505A] text-center">
+              <h4 className="text-2xl font-bold text-[#EB505A] text-center">
                 {segment.title}
               </h4>
 
