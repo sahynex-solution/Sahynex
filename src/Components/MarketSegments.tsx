@@ -29,30 +29,31 @@ const marketData = [
 
 const MarketSegments = () => {
   return (
-    <section className="py-12 px-6 md:px-16 bg-[#FDF5F5]">
-      <div className="text-center mb-12">
+    <section className="py-12 px-6 md:px-16 bg-white">
+      <div className="bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
         <div className="flex justify-center mb-3">
-          <Image
-            src="/icons/market-icon.svg"
-            alt="Market Segments Logo"
-            width={300}
-            height={200}
-          />
+          <h4 className="text-3xl font-bold text-[#EB505A] text-center">
+            Market Segments
+          </h4>
         </div>
-        <p className="max-w-3xl mx-auto text-gray-600 text-base md:text-base font-normal text-center">
-        {/* <p className="max-w !text-center mx-auto text-gray-600 text-lg md:text-xl font-medium tracking-tight"> */}
-
+        <p
+          className="
+            max-w-3xl mx-auto text-gray-600 text-lg md:text-xl font-medium text-left
+          "
+          style={{ textAlignLast: "center" }}
+        >
           We tailor our solutions by understanding key customer groups based on
           behavior, needs and industry trends—helping businesses connect better
           with their audience and drive growth.
         </p>
+
       </div>
 
-      <div className="space-y-12 max-w-6xl mx-auto">
+      <div className="space-y-12 max-w-7xl mx-auto">
         {marketData.map((segment, index) => (
           <div
             key={index}
-            className={`flex flex-col gap-8 items-center md:flex-row md:items-stretch ${
+            className={`bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto flex flex-col gap-8 items-center md:flex-row md:items-stretch ${
               index % 2 === 0 ? "md:flex-row-reverse" : ""
             }`}
           >

@@ -14,7 +14,7 @@ const Carousel = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="w-full h-[160px] sm:h-[200px] md:h-[260px] lg:h-[450px] relative">
+    <div className="w-full h-[250px] sm:h-[280px] md:h-[320px] lg:h-[450px] relative">
       <button
         ref={prevRef}
         className="absolute top-1/2 left-4 z-10 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full"
@@ -77,25 +77,29 @@ const Carousel = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative w-full h-full">
-            <Image
-              src="/images/slide2.svg"
-              alt="Creative Marketing Services"
-              fill
-              className="object-cover"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-            />
-
-            <div className="absolute inset-0  flex items-end">
-              <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
-                <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
-                  IT Solutions
-                </p>
-                <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
-                  Creative <br />
-                  <span className="block">Marketing Services</span>
-                </h1>
-              </div>
+          <div
+            className="relative w-full h-full flex items-end text-white"
+            style={{
+              background: `
+        linear-gradient(259.34deg, rgba(243, 44, 66, 0.24) 17.47%, rgba(85, 117, 236, 0.24) 87.02%),
+        linear-gradient(83.28deg, rgba(85, 117, 236, 0.22) 13.26%, rgba(252, 40, 57, 0.22) 81.36%),
+        linear-gradient(to right, rgba(85,117,236,0.7), rgba(252,40,57,0.3)),
+        linear-gradient(to right, rgba(252,40,57,0.7), rgba(85,117,236,0.3)),
+        url('/images/slide3.jpg')
+      `,
+              backgroundBlendMode: 'multiply, normal, multiply, multiply, normal',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
+            <div className="p-4 sm:p-8 max-w-full space-y-2">
+              <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
+                IT Solutions
+              </p>
+              <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
+                Creative <br />
+                <span className="block">Marketing Services</span>
+              </h1>
             </div>
           </div>
         </SwiperSlide>

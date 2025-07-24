@@ -28,12 +28,12 @@ const AboutPage = () => {
             <span>About</span>
             <span className="text-[#EB505A]">\</span>
           </p>
-          <h2 className="text-3xl lg:text-4xl font-bold text-blue-60 mb-4 leading-tight">
+          <h2 className="text-3xl lg:text-4xl font-bold text-[#0e1f51] mb-4 leading-tight">
             One of the Fastest Way{" "}
             <span className="block lg:block lg:mt-1">to Business Growth</span>
           </h2>
 
-          <p className="text-amber-50 text-base mb-8 max-w-xl">
+          <p className="text-base text-[#0e1f51] mb-8 max-w-xl">
             We are a passionate team committed to accelerating your business
             growth through innovative digital solutions, combining strategy,
             design, and technology to deliver impactful results that help you
@@ -82,7 +82,7 @@ const AboutPage = () => {
       <section id="clients" className="relative pt-6 pb-16 px-6 md:px-16 ">
         <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[rgba(255,62,84,0.84)] opacity-20"></div>
         <div className="relative max-w-6xl mx-auto text-center z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mb-0">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mt-2 mb-0">
             <span className="text-[#e80312]">Our Clients</span>
           </h2>
           <ClientSlider />

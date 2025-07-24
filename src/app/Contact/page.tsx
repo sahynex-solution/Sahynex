@@ -75,10 +75,10 @@
     };
 
     return (
-      <section className="bg-gradient-to-br from-[#2C2F7D] to-[#431344] py-16 px-4 sm:px-6 lg:px-12">
+      <section className="bg-gradient-to-br from-[#2C2F7D] to-[#431344] py-6 md:py-8 px-4 sm:px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12 px-2 sm:px-0">
-            <h2 className="text-[#EB505A] text-sm font-semibold tracking-wider">
+          <div className="text-center mb-6 px-2 sm:px-0">
+            <h2 className="text-[#EB505A] text-2xl font-semibold tracking-wider">
               \ Get In Touch \
             </h2>
             <h2 className="text-white text-3xl sm:text-4xl font-bold mt-2">
@@ -86,9 +86,8 @@
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-[#ebeefa] to-[#F8E2E6] rounded-lg p-5 sm:p-8 shadow-xl border border-white/20 w-full mx-auto lg:w-[90%] lg:max-w-[450px]">
-
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="bg-gradient-to-br from-[#ebeefa] to-[#F8E2E6] rounded-lg p-5 sm:p-8 shadow-xl border border-white/20 w-full mx-auto lg:w-[90%] lg:max-w-[800px]">
               <form className="space-y-5" onSubmit={handleSubmit}>
                 <input
                   type="text"
@@ -141,7 +140,7 @@
               </form>
             </div>
 
-            <div className="bg-[#fde1e6] backdrop-blur-md rounded-lg p-6 sm:p-8 shadow-lg border border-white/20 text-[#322a56] space-y-8 w-full mx-auto lg:w-[90%] lg:max-w-[400px]">
+            <div className="bg-[#fde1e6] backdrop-blur-md rounded-lg p-6 sm:p-8 shadow-lg border border-white/20 text-[#322a56] space-y-8 w-full mx-auto lg:w-[90%] lg:max-w-[450px]">
 
               <div className="flex items-start">
                 <FiPhone size={20} className="text-[#EB505A] mt-1 mr-3" />
