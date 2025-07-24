@@ -27,7 +27,7 @@ const Header = () => {
     <header className="bg-[#f7f7f7] px-4 md:px-6 py-4">
       <div className="flex items-center justify-between ">
         {/* Changed ml-12 to md:ml-12 to remove left margin on mobile */}
-        <Link href="/" className="ml-5 sm:ml-20 md:ml-12">
+        <Link href="/" className="ml-3 sm:ml-7 md:ml-12">
           <Image
             src="/logo/sahynex.svg"
             alt="Sahynex Logo"
