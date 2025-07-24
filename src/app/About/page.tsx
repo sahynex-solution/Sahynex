@@ -14,7 +14,7 @@ const AboutPage = () => {
 
         <div className="relative lg:w-1/2 w-full flex justify-center z-10">
           <Image
-            src="/images/slide1.jpg"
+            src="/images/slide1.svg"
             alt="Students working together"
             width={480}
             height={320}
