@@ -29,8 +29,8 @@ const marketData = [
 
 const MarketSegments = () => {
   return (
-    <section className="py-12 px-6 md:px-16 bg-white">
-      <div className="bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
+    <section className="py-4 px-6 md:px-16 bg-white">
+      <div className="bg-white rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
         <div className="flex justify-center mb-3">
           <h4 className="text-3xl font-bold text-[#EB505A] text-center">
             Market Segments
