@@ -64,12 +64,12 @@ const AboutPage = () => {
       <div className="bg-white mt-0 mb-0 py-25 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-red-500 ">
-            About Sahynex
+           \ About Sahynex \
           </h2>
-          <p className="text-gray-800 text-base md:text-lg leading-relaxed">
+          <p className="text-gray-800 text-base md:text-lg leading-relaxed  max-w-5xl mx-auto px-4">
             Driven by a deep passion for building meaningful digital solutions,
             Sahynex is where innovation meets execution. Evolving from our days
-            as ISDC, we’ve worked with startups and enterprises alike—bringing
+            as ISDC, we’ve worked with startups and enterprises alike bringing
             thoughtful design, powerful development, and a relentless focus on
             the user. For us, every project is a commitment: to quality, to
             collaboration, and to creating tools that people genuinely love to
