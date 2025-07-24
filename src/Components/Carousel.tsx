@@ -53,15 +53,28 @@ const Carousel = () => {
       >
         <SwiperSlide>
           <div className="relative w-full h-full">
+          <div className="relative w-full h-full">
+          {/* Background Image */}
             <Image
-              src="/images/slide1.svg"
+              src="/images/slide1.jpg"
               alt="IT Solutions Slide"
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
               priority
             />
-
+ {/* Simplified Gradient Overlay */}
+ <div
+                className="absolute inset-0"
+                style={{
+                  background: `
+                    linear-gradient(259deg, rgba(243,44,66,0.2) 20%, rgba(85,117,236,0.2) 80%),
+                    linear-gradient(to right, rgba(85,117,236,0.4), rgba(252,40,57,0.25))
+                  `,
+                  backgroundBlendMode: 'multiply, normal',
+                }}
+              ></div>
+            </div>
             <div className="absolute inset-0 flex items-end">
               <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
                 <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
