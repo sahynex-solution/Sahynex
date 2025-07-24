@@ -99,7 +99,7 @@ const Carousel = () => {
             {/* Background Image */}
             <Image
               src="/images/slide3.jpg"
-              alt="IT Solutions Slide"
+              alt="Creative Solutions Slide"
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
