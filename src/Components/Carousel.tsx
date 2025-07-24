@@ -3,11 +3,10 @@
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const Carousel = () => {
   const prevRef = useRef(null);
@@ -52,66 +51,48 @@ const Carousel = () => {
         className="w-full h-full"
       >
         <SwiperSlide>
-          <div className="relative w-full h-full">
-          <div className="relative w-full h-full">
-          {/* Background Image */}
-            <Image
-              src="/images/slide1.jpg"
-              alt="IT Solutions Slide"
-              fill
-              className="object-cover"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
-              priority
-            />
- {/* Simplified Gradient Overlay */}
- <div
-                className="absolute inset-0"
-                style={{
-                  background: `
-                    linear-gradient(259deg, rgba(243,44,66,0.2) 20%, rgba(85,117,236,0.2) 80%),
-                    linear-gradient(to right, rgba(85,117,236,0.4), rgba(252,40,57,0.25))
-                  `,
-                  backgroundBlendMode: 'multiply, normal',
-                }}
-              ></div>
-            </div>
-            <div className="absolute inset-0 flex items-end">
-              <div className="p-4 sm:p-8 text-white max-w-full space-y-2">
-                <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
-                  IT Solutions
-                </p>
-                <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
-                  Professional IT <br />
-                  <span className="block">Services for Business</span>
-                </h1>
-              </div>
+          <div
+            className="relative w-full h-full flex items-end"
+            style={{
+              background: `
+                linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
+                linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%),
+                url(/images/slide1.jpg) lightgray 50% / cover no-repeat
+              `,
+              backgroundBlendMode: "multiply, normal, normal",
+            }}
+          >
+            <div className="p-4 sm:p-8 text-white space-y-2">
+              <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
+                IT Solutions
+              </p>
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold leading-tight">
+                Professional <br />
+                <span>IT Services for Business</span>
+              </h1>
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div
-            className="relative w-full h-full flex items-end text-white"
+            className="relative w-full h-full flex items-end"
             style={{
               background: `
-        linear-gradient(259.34deg, rgba(243, 44, 66, 0.24) 17.47%, rgba(85, 117, 236, 0.24) 87.02%),
-        linear-gradient(83.28deg, rgba(85, 117, 236, 0.22) 13.26%, rgba(252, 40, 57, 0.22) 81.36%),
-        linear-gradient(to right, rgba(85,117,236,0.7), rgba(252,40,57,0.3)),
-        linear-gradient(to right, rgba(252,40,57,0.7), rgba(85,117,236,0.3)),
-        url('/images/slide3.jpg')
-      `,
-              backgroundBlendMode: 'multiply, normal, multiply, multiply, normal',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
+                linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
+                linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%),
+                url(/images/slide3.jpg) lightgray 50% / cover no-repeat
+              `,
+              backgroundBlendMode: "multiply, normal, normal",
             }}
           >
-            <div className="p-4 sm:p-8 max-w-full space-y-2">
+            <div className="p-4 sm:p-8 text-white space-y-2">
               <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
                 IT Solutions
               </p>
-              <h1 className="text-xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-tight">
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold leading-tight">
                 Creative <br />
-                <span className="block">Marketing Services</span>
+                <span>Marketing Services</span>
               </h1>
             </div>
           </div>
