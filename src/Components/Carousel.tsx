@@ -79,12 +79,17 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="relative w-full h-full">
             <Image
-              src="/images/slide2.svg"
+              src="/images/slide3.jpg"
               alt="Creative Marketing Services"
               fill
               className="object-cover"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
             />
+            {/* Layer 1: Subtle Linear Gradient from #5575EC to #FC2839 */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5575EC]/60 to-[#FC2839]/30"></div>
+            {/* Layer 2: Light Multiply Blend */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#5575EC]/50 to-[#FC2839]/20 mix-blend-multiply"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent z-10" />
 
             <div className="absolute inset-0  flex items-end">
               <div className="p-4 sm:p-8 text-white max-w-full space-y-2">

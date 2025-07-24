@@ -5,8 +5,8 @@ import Link from "next/link";
 const Whatwedo = () => {
   return (
     <div>
-      <section className="bg-white py- 8 px-6 md:px-16">
-        <div className="bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+      <section className="bg-[#FDF5F5] py-20 px-6 md:px-16">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           <div className="rounded-2xl overflow-hidden shadow-lg h-full">
             <Image
               src="/images/what-we-do.jpg"
@@ -23,7 +23,7 @@ const Whatwedo = () => {
                 \ What We Do \
               </p>
 
-              <h2 className="text-[1.7rem] md:text-4xl font-bold text-[#0e1f51] leading-tight mb-5 tracking-tight">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#0e1f51] leading-tight mb-5">
                 We build what people love.
               </h2>
 
@@ -36,6 +36,7 @@ const Whatwedo = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+              {/* Our Vision */}
               <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
                 <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image
@@ -56,6 +57,7 @@ const Whatwedo = () => {
                 </div>
               </div>
 
+              {/* Our Goal */}
               <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
                 <div className="bg-white p-3 rounded-md flex-shrink-0">
                   <Image
@@ -63,7 +65,7 @@ const Whatwedo = () => {
                     alt="Our Goal Icon"
                     width={48}
                     height={48}
-                    className="bg-[#FFF6F6] w-10 h-10 sm:w-12 sm:h-12"
+                    className="bg-[#FFF6F6]  w-10 h-10 sm:w-12 sm:h-12"
                   />
                 </div>
                 <div className="flex flex-col justify-center">

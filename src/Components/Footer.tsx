@@ -15,10 +15,10 @@ import {
 export default function Footer() {
   const [subscriptionMessage, setSubscriptionMessage] = useState("");
   return (
-    <footer className="bg-[#0d1440] text-white py-16 px-6 md:px-20">
+    <footer className="bg-[#0d1440] text-white py-6 md:py-16 px-6 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
         <div>
-          <p className="mb-4 leading-relaxed text-gray-300 mt-8">
+          <p className="mb-4 leading-relaxed text-gray-300 md:mt-10">
             At Sahynex, we believe clarity in design and function leads to products that users truly connect with and inspire innovation in every interaction.
           </p>
           <div className="flex gap-4 mt-6">
