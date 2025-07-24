@@ -39,7 +39,7 @@ const MarketSegments = () => {
             height={200}
           />
         </div>
-        <p className="max-w-3/4 !text-center mx-auto text-gray-600 text-lg md:text-xl font-medium tracking-tight">
+        <p className="max-w !text-center mx-auto text-gray-600 text-lg md:text-xl font-medium tracking-tight">
           We tailor our solutions by understanding key customer groups based on
           behavior, needs and industry trends helping businesses connect better
           with their audience and drive growth.</p>
