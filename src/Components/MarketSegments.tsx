@@ -7,7 +7,7 @@ const marketData = [
   {
     title: "Organizations Spiritual Centers",
     description:
-      "We offer websites, digital invitations, and other creative services for organizations and spiritual centers—making it easier to connect with their communities and share important moments.",
+      "We offer websites, digital invitations, and other creative services for organizations and spiritual centers making it easier to connect with their communities and share important moments.",
     icon: "/icons/temple-icon.svg",
     image: "/images/spiritual.jpg",
   },
@@ -29,26 +29,33 @@ const marketData = [
 
 const MarketSegments = () => {
   return (
-    <section className="py-4 px-6 md:px-16 bg-white">
-      <div className="bg-white rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
+    <section className="py-12 px-6 md:px-16 bg-white">
+      <div className=" rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto text-center mb-12">
         <div className="flex justify-center mb-3">
           <h4
-            className="text-3xl font-bold text-center bg-gradient-to-r from-[#2400A7] via-[#9544A5] to-[#EB505A] bg-clip-text text-transparent"
+            className="text-3xl font-bold text-center"
+            style={{
+              background:
+                "linear-gradient(90deg, #111184 0%, rgba(255, 62, 84, 0.84) 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
           >
             Market Segments
           </h4>
         </div>
         <p
           className="
-            max-w-3xl mx-auto text-gray-700 text-base text-left tracking-tight
-          "
+    max-w-3xl mx-auto text-gray-600 text-base text-left
+  "
+
           style={{ textAlignLast: "center" }}
         >
           We tailor our solutions by understanding key customer groups based on
-          behavior, needs and industry trends—helping businesses connect better
+          behavior, needs and industry trends helping businesses connect better
           with their audience and drive growth.
         </p>
-
       </div>
 
       <div className="space-y-12 max-w-7xl mx-auto">
