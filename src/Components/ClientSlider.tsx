@@ -81,7 +81,7 @@ export default function ClientSlider() {
                   >
                     “
                   </p>
-                  <p className="mt-25 mb-2 relative z-10">
+                  <p className="mt-20 md:mt-25 mb-2 relative z-10 md:tracking-tight">
                     {client.testimonial}
                   </p>
                   <hr className="border-gray-300 opacity-50 relative z-10" />
