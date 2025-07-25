@@ -17,7 +17,6 @@ const ConnectFooter = () => {
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 100vw"
           priority
         />
-
         {/* Gradient Overlay */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"
@@ -30,9 +29,6 @@ const ConnectFooter = () => {
             backgroundBlendMode: 'multiply, overlay, multiply',
           }}
         ></div>
-
-
-
         {/* Foreground Content */}
         <div className="relative z-20 h-full w-full flex flex-row items-end justify-between px-4 sm:px-6 py-6 text-white gap-x-4">
           <div className="flex flex-col gap-y-2 max-w-xs sm:max-w-md">
@@ -43,7 +39,6 @@ const ConnectFooter = () => {
               Get in touch with Sahynex for personalized support.
             </p>
           </div>
-
           <div>
             <Link href="/Contact">
               <button className="bg-white text-red-600 font-medium text-xs sm:text-sm px-2.5 py-1 sm:px-4 sm:py-2 rounded-md shadow-lg hover:bg-red-100 transition duration-300 ease-in-out transform hover:scale-105">
@@ -53,9 +48,6 @@ const ConnectFooter = () => {
           </div>
         </div>
       </div>
-
-
-
     </div>
   );
 };

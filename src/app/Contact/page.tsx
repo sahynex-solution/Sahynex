@@ -158,7 +158,7 @@
                   <h3 className="text-lg font-semibold text-[#EB505A]">
                     Send Email
                   </h3>
-                  <p>sahynexsolutions@gmail.com</p>
+                  <p>infos@sahynex.com</p>
                 </div>
               </div>
 
@@ -168,7 +168,7 @@
                   <h3 className="text-lg font-semibold text-[#EB505A]">
                     Visit Us
                   </h3>
-                  <p>5th floor Sahyadri campus</p>
+                  <p>5th floor, Sahyadri Campus,</p>
                   <p>Adyar, Mangaluru</p>
                 </div>
               </div>
