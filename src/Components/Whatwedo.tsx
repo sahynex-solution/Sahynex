@@ -5,8 +5,8 @@ import Link from "next/link";
 const Whatwedo = () => {
   return (
     <div>
-      <section className="bg-[#FDF5F5] py-20 px-6 md:px-16">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+      <section className="bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3] py-16 px-6 md:px-16">
+        <div className="rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
           <div className="rounded-2xl overflow-hidden shadow-lg h-full">
             <Image
               src="/images/what-we-do.jpg"
@@ -37,8 +37,8 @@ const Whatwedo = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
               {/* Our Vision */}
-              <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
-                <div className="bg-white p-3 rounded-md flex-shrink-0">
+              <div className="bg-white p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
+                <div className="bg-[#FFF6F6] p-3 rounded-md flex-shrink-0">
                   <Image
                     src="/icons/vision-icon.svg"
                     alt="Our Vision Icon"
@@ -58,8 +58,8 @@ const Whatwedo = () => {
               </div>
 
               {/* Our Goal */}
-              <div className="bg-[#FFF6F6] p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
-                <div className="bg-white p-3 rounded-md flex-shrink-0">
+              <div className="bg-white p-4 rounded-xl shadow flex flex-row sm:flex-row items-start gap-4">
+                <div className="bg-[#FFF6F6] p-3 rounded-md flex-shrink-0">
                   <Image
                     src="/icons/goal-icon.svg"
                     alt="Our Goal Icon"
