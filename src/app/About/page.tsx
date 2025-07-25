@@ -49,7 +49,7 @@ const AboutPage = () => {
             <span className="block lg:block lg:mt-1">to Business Growth</span>
           </h2>
 
-          <p className="text-[#2B2B4F] text-base mb-8 max-w-xl">
+          <p className="text-[#2B2B4F] text-base mb-8">
             We are a passionate team committed to accelerating your business
             growth through innovative digital solutions, combining strategy,
             design, and technology to deliver impactful results that help you
