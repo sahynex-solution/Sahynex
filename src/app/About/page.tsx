@@ -8,9 +8,9 @@ import WhatwedoAbout from "@/Components/WhatwedoAbout";
 
 const AboutPage = () => {
   return (
-    <div className="">
+    <div>
       <section className="relative py-10 px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-12">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[rgba(255,62,84,0.84)] opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
 
         <div className="relative lg:w-1/2 w-full flex justify-center z-10">
           {/* Container to ensure proper positioning */}
