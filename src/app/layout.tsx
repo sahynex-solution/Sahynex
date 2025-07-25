@@ -7,6 +7,7 @@ import ConnectFooter from "@/Components/ConnectFooter";
 import BottomBar from "@/Components/BottomBar";
 import Footer from "@/Components/Footer";
 import ScrollToHash from "@/Components/scrollToHash";
+import PageTransition from "@/Components/PageTransition";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -76,8 +77,11 @@ export default function RootLayout({
           <TopBar />
           <Header />
         </div>
+
         <ScrollToHash />
-        {children}
+        
+        <PageTransition>{children}</PageTransition>
+
         <ConnectFooter />
         <Footer />
         <BottomBar />
@@ -85,3 +89,4 @@ export default function RootLayout({
     </html>
   );
 }
+

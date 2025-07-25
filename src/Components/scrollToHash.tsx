@@ -3,8 +3,9 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-function smoothScrollTo(element: Element, duration = 1000) {
-  const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
+function smoothScrollTo(element: Element, duration = 1000, offset = -100) {
+  const targetPosition =
+    element.getBoundingClientRect().top + window.pageYOffset + offset;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
   let startTime: number | null = null;
@@ -33,20 +34,20 @@ export default function ScrollToHash() {
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.location.hash) {
-      window.scrollTo(0, 0); 
+      window.scrollTo(0, 0);
       setTimeout(() => {
         const element = document.querySelector(window.location.hash);
-        if (element) smoothScrollTo(element, 1000);
-      }, 300); 
-    }
+        if (element) smoothScrollTo(element, 1000, -100);
+      }, 300);
+    } 
 
     const handleClick = (e: Event) => {
       const target = e.target as HTMLAnchorElement;
       if (target.tagName === "A" && target.hash) {
         const element = document.querySelector(target.hash);
         if (element) {
-          e.preventDefault(); 
-          smoothScrollTo(element, 1000);
+          e.preventDefault();
+          smoothScrollTo(element, 1000, -100);
         }
       }
     };

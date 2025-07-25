@@ -8,7 +8,7 @@ import WhatwedoAbout from "@/Components/WhatwedoAbout";
 
 const AboutPage = () => {
   return (
-    <div>
+    <div id="about-info">
       <section className="relative py-10 px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
 
