@@ -10,7 +10,7 @@ const TopBar = () => {
         <div className="flex items-center gap-2 whitespace-nowrap">
           <FaEnvelope size={14} />
           <Link
-            href="mailto:sahynexsolutions@gmail.com"
+            href="mailto:info@sahynex.com"
             className="hover:text-yellow-300 font-bold"
           >
             info@sahynex.com
