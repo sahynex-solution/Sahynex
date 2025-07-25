@@ -49,6 +49,7 @@ const MarketSegments = () => {
           className="
     max-w-3xl mx-auto text-gray-600 text-base text-left
   "
+
           style={{ textAlignLast: "center" }}
         >
           We tailor our solutions by understanding key customer groups based on

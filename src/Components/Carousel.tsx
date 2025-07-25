@@ -70,6 +70,7 @@ const Carousel = () => {
                 Professional <br />
                 <span>IT Services for Business</span>
               </h1>
+     
             </div>
           </div>
         </SwiperSlide>
@@ -95,6 +96,7 @@ const Carousel = () => {
                 <span>Marketing Services</span>
               </h1>
             </div>
+
           </div>
         </SwiperSlide>
       </Swiper>
