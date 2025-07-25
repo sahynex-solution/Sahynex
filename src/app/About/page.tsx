@@ -30,7 +30,7 @@ const AboutPage = () => {
                 background: `
           linear-gradient(to right, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.25) 100%)
         `,
-                backgroundBlendMode: 'multiply',
+                backgroundBlendMode: 'multiply'
               }}
             ></div>
           </div>
