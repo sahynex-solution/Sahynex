@@ -164,7 +164,7 @@ const Header = () => {
             {isMobileAboutOpen && (
               <div className="pl-4 mt-2 space-y-2">
                 <Link
-                  href="/About#about-info"
+                  href="/About#info"
                   onClick={() => {
                     setMobileMenuOpen(false);
                     setIsMobileAboutOpen(false);
