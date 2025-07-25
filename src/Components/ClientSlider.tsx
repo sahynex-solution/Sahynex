@@ -22,14 +22,14 @@ const clients = [
     name: "Ashwath Hegde",
     title: "Founder of Heggade Vahini",
     testimonial:
-      "They understood our vision from day one and delivered a seamless platform that really exceeded  our expectations. ",
+      "They understood our vision from day one and delivered a seamless platform that really exceeded our expectations. ",
     image: "/testimonials/user2.svg",
     bgColor: "bg-[#4A90E2] text-white", // Blue card
     quoteColor: "text-white", // White quote
   },
   {
     name: "Shri Kishor Kumar Kujugodu",
-    title: "President,Harihareshwara Temple",
+    title: "President, Harihareshwara Temple",
     testimonial:
       "From UI/UX to deployment, they owned the product like it was theirs. We’d gladly work with them again.",
     image: "/user.png",
@@ -81,13 +81,13 @@ export default function ClientSlider() {
                   >
                     “
                   </p>
-                  <p className="mt-20 md:mt-25 mb-2 relative z-10 md:tracking-tight">
+                  <p className="mt-20 md:mt-25 mb-2 relative z-10 tracking-tight">
                     {client.testimonial}
                   </p>
                   <hr className="border-gray-300 opacity-50 relative z-10" />
                 </div>
 
-                <div className="flex items-start mt-6 gap-4">
+                <div className="flex items-start mt-4 md:mt-6 gap-4">
                   <div className="flex-shrink-0">
                     <Image
                       src={client.image}
