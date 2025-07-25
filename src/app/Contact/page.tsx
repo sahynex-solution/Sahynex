@@ -158,7 +158,7 @@
                   <h3 className="text-lg font-semibold text-[#EB505A]">
                     Send Email
                   </h3>
-                  <p>infos@sahynex.com</p>
+                  <p>info@sahynex.com</p>
                 </div>
               </div>
 

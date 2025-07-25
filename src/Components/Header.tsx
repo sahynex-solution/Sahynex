@@ -76,7 +76,7 @@ const Header = () => {
             {isAboutOpen && (
               <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
                 <Link
-                  href="/About"
+                  href="/About#info"
                   className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
                   onClick={() => setIsAboutOpen(false)}
                 >
@@ -164,7 +164,7 @@ const Header = () => {
             {isMobileAboutOpen && (
               <div className="pl-4 mt-2 space-y-2">
                 <Link
-                  href="/About#about-info"
+                  href="/About#info"
                   onClick={() => {
                     setMobileMenuOpen(false);
                     setIsMobileAboutOpen(false);
