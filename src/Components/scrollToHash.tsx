@@ -62,7 +62,7 @@ export default function ScrollToHash() {
         const element = document.querySelector(target.hash);
         if (element) {
           e.preventDefault();
-          smoothScrollTo(element, 1000, -80);
+          smoothScrollTo(element, 1000, -90);
         }
       }
     };

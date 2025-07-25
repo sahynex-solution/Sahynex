@@ -5,7 +5,7 @@ import Link from "next/link";
 const LeadersGrid = () => {
   return (
     <div>
-           <section id="team" className="bg-white py-16 px-6 md:px-16">
+      <section  id="team" className="bg-white py-16 px-6 md:px-16 pt-16 md:pt-30 scroll-mb-8 mb-8 scroll-mt-7 md:scroll-mt-1">
         <div className="max-w-full mx-auto text-center">
           <h2 className="text-[#EB505A] text-base font-semibold mb-2">\ Team \</h2>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mb-10">
