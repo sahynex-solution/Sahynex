@@ -79,7 +79,7 @@
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 px-2 sm:px-0">
             <h2 className="text-[#EB505A] text-2xl font-semibold tracking-wider">
-              \ Get In Touch \
+              Get In Touch
             </h2>
             <h2 className="text-white text-3xl sm:text-4xl font-bold mt-2">
               Hey! Let's Connect
@@ -168,7 +168,7 @@
                   <h3 className="text-lg font-semibold text-[#EB505A]">
                     Visit Us
                   </h3>
-                  <p>5th floor, Sahyadri Campus,</p>
+                  <p>Sahyadri Campus,</p>
                   <p>Adyar, Mangaluru</p>
                 </div>
               </div>

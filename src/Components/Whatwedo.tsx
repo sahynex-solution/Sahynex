@@ -7,6 +7,7 @@ const Whatwedo = () => {
     <div>
       <section className="bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3] py-20 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+          
           <div className="rounded-2xl overflow-hidden shadow-lg h-full">
             <Image
               src="/images/what-we-do.jpg"
@@ -20,7 +21,7 @@ const Whatwedo = () => {
           <div className="flex flex-col justify-between h-full">
             <div>
               <p className="text-red-500 font-semibold mb-3 text-[16px]">
-                \ What We Do \
+                 What We Do 
               </p>
 
               <h2 className="text-[1.62rem] md:text-4xl font-bold text-[#0e1f51] leading-tight mb-5">

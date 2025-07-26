@@ -41,7 +41,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="/"
-            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm transition-colors"
           >
             Home
           </Link>
@@ -52,7 +52,7 @@ const Header = () => {
             onMouseLeave={handleMouseLeave}
           >
             <button
-              className="text-[#0e1f51] hover:text-[#EB505A] font-medium flex items-center transition-colors"
+              className="text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm flex items-center transition-colors"
               onClick={() => setIsAboutOpen(!isAboutOpen)}
             >
               About Us
@@ -77,21 +77,21 @@ const Header = () => {
               <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
                 <Link
                   href="/About#info"
-                  className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
+                  className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium text-sm"
                   onClick={() => setIsAboutOpen(false)}
                 >
                   About Us
                 </Link>
                 <Link
                   href="/About#team"
-                  className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
+                  className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium text-sm"
                   onClick={() => setIsAboutOpen(false)}
                 >
                   Our Team
                 </Link>
                 <Link
                   href="/About#clients"
-                  className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium"
+                  className="block px-4 py-2 text-sm text-[#0e1f51] hover:bg-[#f7f7f7] hover:text-[#EB505A] font-medium text-sm"
                   onClick={() => setIsAboutOpen(false)}
                 >
                   Our Clients
@@ -102,25 +102,25 @@ const Header = () => {
 
           <Link
             href="/Services"
-            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm transition-colors"
           >
             Our Services
           </Link>
           <Link
             href="/Career"
-            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm transition-colors"
           >
             Career
           </Link>
           <Link
             href="/Contact"
-            className="text-[#0e1f51] hover:text-[#EB505A] font-medium transition-colors"
+            className="text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm transition-colors"
           >
             Contact
           </Link>
 
           <Link href="/Contact">
-            <button className="bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium ml-4 transition-colors">
+            <button className="bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium text-sm ml-4 transition-colors">
               Get In Touch
             </button>
           </Link>
@@ -143,14 +143,14 @@ const Header = () => {
           <Link
             href="/"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm"
           >
             Home
           </Link>
 
           <div>
             <button
-              className="text-[#0e1f51] hover:text-[#EB505A] font-medium cursor-pointer flex items-center justify-between w-full"
+              className="text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm cursor-pointer flex items-center justify-between w-full"
               onClick={() => setIsMobileAboutOpen(!isMobileAboutOpen)}
             >
               About Us
@@ -200,21 +200,21 @@ const Header = () => {
           <Link
             href="/Services"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm"
           >
             Our Services
           </Link>
           <Link
             href="/Career"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm"
           >
             Career
           </Link>
           <Link
             href="/Contact"
             onClick={() => setMobileMenuOpen(false)}
-            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium"
+            className="block text-[#0e1f51] hover:text-[#EB505A] font-medium text-sm"
           >
             Contact
           </Link>
@@ -224,7 +224,7 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(false)}
             className="cursor-pointer"
           >
-            <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium cursor-pointer">
+            <button className="w-full bg-[#EB505A] hover:bg-[#d83a4f] text-white px-4 py-2 rounded-md font-medium text-sm cursor-pointer">
               Get In Touch
             </button>
           </Link>

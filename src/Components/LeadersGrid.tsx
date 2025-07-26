@@ -5,9 +5,8 @@ import Link from "next/link";
 const LeadersGrid = () => {
   return (
     <div>
-      <section  id="team" className="bg-white py-16 px-6 md:px-16 pt-16 md:pt-30 scroll-mb-8 mb-8 scroll-mt-7 md:scroll-mt-1">
+      <section  id="team" className="bg-white py-16 px-3 md:px-6 md:px-16 pt-16 md:pt-30 scroll-mb-8 mb-8 scroll-mt-7 md:scroll-mt-1">
         <div className="max-w-full mx-auto text-center">
-          <h2 className="text-[#EB505A] text-base font-semibold mb-2">\ Team \</h2>
           <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mb-10">
             Our Leaders
           </h2>
@@ -43,10 +42,10 @@ const LeadersGrid = () => {
   ].map((leader, index) => (
     <div
       key={index}
-      className="bg-[#f9f9f9] rounded-xl shadow-lg p-4 flex flex-col items-center text-center hover:shadow-xl transition-shadow"
+      className="bg-[#f9f9f9] rounded-xl shadow-lg p-2 md:p-4 flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow min-w-[235px]"
     >
       {/* Image Container - Perfect Square, Responsive */}
-      <div className="relative w-full aspect-square mb-4 max-w-[220px]">
+      <div className="relative w-full aspect-square mb-4  max-w-[220px]">
         <Image
           src={leader.image}
           alt={leader.name}

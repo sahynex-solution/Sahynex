@@ -18,7 +18,7 @@ const WhatwedoAbout = () => {
           <div className="flex flex-col justify-between h-full">
             <div>
               <p className="text-red-500 font-semibold mb-3 text-[16px]">
-                \ What We Do \
+                 What We Do 
               </p>
 
               <h2 className="text-[1.62rem] md:text-4xl font-bold text-[#0e1f51] leading-tight mb-5 ">
