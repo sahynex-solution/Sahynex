@@ -14,7 +14,7 @@ const clients = [
     title: "President of Shri Rama Seva Samiti Chokkadi",
     testimonial:
       "They took feedback seriously and translated our requirements into a powerful tool that our customers love using.",
-    image: "/images/testimonials/user.png",
+    image: "/images/clients/user.png",
     bgColor: "bg-[#4A90E2] text-white", // White card
     quoteColor: "text-white", // Dark blue quote
   },
@@ -23,7 +23,7 @@ const clients = [
     title: "Founder of Heggade Vahini",
     testimonial:
       "They understood our vision from day one and delivered a seamless platform that really exceeded our expectations. ",
-    image: "/images/testimonials/Ashwath_Heggade.jpg",
+    image: "/images/clients/Ashwath_Heggade.jpg",
     bgColor: "bg-[#4A90E2] text-white", // Blue card
     quoteColor: "text-white", // White quote
   },
@@ -32,7 +32,7 @@ const clients = [
     title: "President, Harihareshwara Temple",
     testimonial:
       "From UI/UX to deployment, they owned the product like it was theirs. We’d gladly work with them again.",
-    image: "/images/testimonials/user.png",
+    image: "/images/clients/user.png",
     bgColor: "bg-[#4A90E2] text-white", // Blue card
     quoteColor: "text-white", // White quote
   },

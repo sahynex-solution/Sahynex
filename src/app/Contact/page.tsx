@@ -107,6 +107,7 @@
                   type="tel"
                   placeholder="Phone"
                   name="phone"
+                  pattern="^\+?[0-9\s\-]{7,15}$"
                   required
                   className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition"
                 />
