@@ -10,8 +10,7 @@ const AboutPage = () => {
   return (
     <div id="info" className="scroll-mt-20">
       <section className="relative py-10 px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-12">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
-
+        <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[#FF3E54D6] opacity-20"></div>
         <div className="relative lg:w-1/2 w-full flex justify-center z-10">
           {/* Container to ensure proper positioning */}
           <div className="relative w-[420px] h-[280px] lg:w-[640px] lg:h-[420px] rounded-[32px] shadow-xl overflow-hidden">
@@ -28,7 +27,7 @@ const AboutPage = () => {
               className="absolute inset-0 rounded-[32px] pointer-events-none"
               style={{
                 background: `
-          linear-gradient(to right, rgba(0, 0, 0, 0.4) 40%, rgba(0, 0, 0, 0.25) 100%)
+          linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.2) 100%)
         `,
                 backgroundBlendMode: 'multiply'
               }}
@@ -36,13 +35,9 @@ const AboutPage = () => {
           </div>
         </div>
 
-
-
         <div className="relative lg:w-1/2 w-full flex flex-col justify-center lg:pl-12 z-10">
           <p className="text-[#EB505A] text-base font-semibold mb-2 flex items-center gap-2">
-            <span className="text-[#EB505A]">\</span>
             <span>About</span>
-            <span className="text-[#EB505A]">\</span>
           </p>
           <h2 className="text-[#2B2B4F] text-3xl lg:text-4xl font-bold mb-4 leading-tight">
             One of the Fastest Way{" "}
@@ -80,7 +75,7 @@ const AboutPage = () => {
       <div className="bg-white mt-0 mb-0 py-25 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 text-red-500 ">
-            \ About Sahynex \
+            About Sahynex
           </h2>
           <p className="text-gray-800 text-base md:text-lg leading-relaxed  max-w-5xl mx-auto px-3" style={ {textAlignLast: "center" }}>
             Driven by a deep passion for building meaningful digital solutions,
@@ -95,8 +90,8 @@ const AboutPage = () => {
       </div>
       <WhatwedoAbout />
       <LeadersGrid />
-      <section id="clients" className="relative pt-3 pb-40 px-6 md:px-16 mt-24 scroll-mt-28">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[rgba(255,62,84,0.84)] opacity-20"></div>
+      <section id="clients" className="relative pt-3 pb-22 px-6 md:px-16 mt-24 scroll-mt-28">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[#FF3E54D6] opacity-20"></div>
         <div className="relative max-w-6xl mx-auto text-center z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mt-2 mb-0 pt-10">
             <span className="text-[#e80312]">Our Clients</span>

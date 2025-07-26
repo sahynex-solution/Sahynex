@@ -68,7 +68,7 @@ export default function Page() {
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 max-w-7xl mx-auto relative z-10">
           {/* ✅ Left Text Section */}
           <div className="lg:w-1/2 text-center lg:text-left flex flex-col items-start justify-center">
-            <p className="text-[#EB505A] text-base font-semibold mb-2">\ We Are Here \</p>
+            <p className="text-[#EB505A] text-base font-semibold mb-2">We Are Here</p>
             <h1 className="text-4xl sm:text-5xl font-bold text-[#0E1F51] mb-4 leading-tight">
               Better Insights For <br /> Business Growth
             </h1>
@@ -190,7 +190,7 @@ export default function Page() {
       {/* Services Section */}
       <section className="bg-white py-16 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-pink-500 font-semibold text-lg">\ Services \</span>
+          <span className="text-pink-500 font-semibold text-lg">Services</span>
           <h2 className="text-4xl sm:text-5xl font-bold text-blue-900 mt-2 mb-4">Our Expertise</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
