@@ -178,6 +178,7 @@ export default function Page() {
                     alt={`Slide ${i + 1}`}
                     width={240}
                     height={380}
+                    priority={i===0}
                     className="w-[280px] h-[450px] sm:w-[320px] sm:h-[514px] object-cover rounded-xl"
                   />
                 </SwiperSlide>
@@ -199,7 +200,7 @@ export default function Page() {
               key={idx}
               className="bg-gray-50 rounded-xl p-8 flex flex-col items-start shadow-sm hover:shadow-lg transition"
             >
-              <Image src={service.icon} alt={service.title} width={64} height={64} className="mb-4" />
+              <Image src={service.icon} alt={service.title} width={64} height={64} className="mb-4 inline-block w-auto" />
               <h3 className="font-bold text-lg text-blue-900 mb-2">{service.title}</h3>
               <div className="w-16 h-2 bg-pink-500 rounded-full mb-4"></div>
               <p className="text-gray-700 text-sm">{service.desc}</p>

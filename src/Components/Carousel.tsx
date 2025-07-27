@@ -63,10 +63,10 @@ const Carousel = () => {
             }}
           >
             <div className="p-4 sm:p-8 text-white space-y-2">
-              <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
+              <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold font-poppins">
                 IT Solutions
               </p>
-              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold leading-tight">
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold leading-tight font-poppins">
                 Professional <br />
                 <span>IT Services for Business</span>
               </h1>
@@ -88,10 +88,10 @@ const Carousel = () => {
             }}
           >
             <div className="p-4 sm:p-8 text-white space-y-2">
-              <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold">
+              <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold font-poppins">
                 IT Solutions
               </p>
-              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold leading-tight">
+              <h1 className="text-xl sm:text-3xl md:text-5xl font-bold leading-tight font-poppins">
                 Creative <br />
                 <span>Marketing Services</span>
               </h1>
