@@ -20,10 +20,10 @@ const clients = [
   },
   {
     name: "Ashwath Hegde",
-    title: "Founder of Heggade Vahini",
+    title: "Founder of Hegde Vahini",
     testimonial:
       "They understood our vision from day one and delivered a seamless platform that really exceeded our expectations. ",
-    image: "/images/clients/Ashwath_Heggade.jpg",
+    image: "/images/clients/Ashwath_Hegde.jpg",
     bgColor: "bg-[#4A90E2] text-white", // Blue card
     quoteColor: "text-white", // White quote
   },
