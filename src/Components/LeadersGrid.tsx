@@ -14,7 +14,6 @@ const LeadersGrid = () => {
             Our Leaders
           </h2>
 
-          {/* Leaders Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 px-4 sm:px-8">
             {[
               {
@@ -47,7 +46,6 @@ const LeadersGrid = () => {
                 key={index}
                 className="bg-[#f9f9f9] rounded-xl shadow-lg p-2 md:p-4 flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow min-w-[235px]"
               >
-                {/* Image Container - Perfect Square, Responsive */}
                 <div className="relative w-full aspect-square mb-4  max-w-[220px]">
                   <Image
                     src={leader.image}
