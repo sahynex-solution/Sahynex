@@ -11,6 +11,7 @@
   } from "react-icons/fa";
   import { toast, ToastContainer, Bounce } from "react-toastify";
   import "react-toastify/dist/ReactToastify.css";
+  import PhoneInput from "@/Components/PhoneInput";
 
   interface ContactFormData {
     name: string;
@@ -103,14 +104,15 @@
                   required
                   className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition"
                 />
-                <input
+                {/* <input
                   type="tel"
                   placeholder="Phone"
                   name="phone"
-                  pattern="^\+?[0-9\s\-]{7,15}$"
+                  pattern="^\+?[0-9\s\-]{10}$"
                   required
                   className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#EB505A] transition"
-                />
+                /> */}
+                <PhoneInput/>
                 <textarea
                   placeholder="Your Message"
                   name="message"
