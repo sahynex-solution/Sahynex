@@ -14,6 +14,7 @@ const Whatwedo = () => {
               alt="Developer at work"
               width={600}
               height={400}
+              priority
               className="object-cover w-full h-full"
             />
           </div>
@@ -83,12 +84,13 @@ const Whatwedo = () => {
               >
                 <span className="underline font-semibold">READ MORE</span>
                 <Image
-                  src="/icons/more.svg"
-                  alt="arrow icon"
-                  width={10}
-                  height={10}
-                  className="inline-block"
-                />
+  src="/icons/more.svg"
+  alt="arrow icon"
+  height={10}
+  width={10}
+  className="inline-block w-auto" // width auto to keep ratio if height is fixed
+/>
+
               </Link>
             </div>
           </div>

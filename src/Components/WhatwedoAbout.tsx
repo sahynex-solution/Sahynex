@@ -11,6 +11,7 @@ const WhatwedoAbout = () => {
               alt="Developer at work"
               width={600}
               height={400}
+              priority
               className="object-cover w-full h-full"
             />
           </div>

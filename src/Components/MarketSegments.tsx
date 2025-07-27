@@ -62,9 +62,8 @@ const MarketSegments = () => {
         {marketData.map((segment, index) => (
           <div
             key={index}
-            className={`bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto flex flex-col gap-8 items-center md:flex-row md:items-stretch ${
-              index % 2 === 0 ? "md:flex-row-reverse" : ""
-            }`}
+            className={`bg-[#FDF5F5] rounded-3xl overflow-hidden p-10 md:p-12 max-w-7xl mx-auto flex flex-col gap-8 items-center md:flex-row md:items-stretch ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+              }`}
           >
             <div className="w-full md:hidden flex flex-col gap-6">
               <h4 className="text-3xl font-bold text-[#EB505A] text-center">
@@ -91,19 +90,22 @@ const MarketSegments = () => {
                 )}
               </h4>
 
-              <div className="flex justify-center">
+              <div
+                className={`relative mx-auto ${index === 0 || index === 2
+                    ? "w-[160px] h-[160px]"
+                    : "w-[100px] h-[100px]"
+                  }`}
+              >
                 <Image
                   src={segment.icon}
                   alt="icon"
-                  width={index === 0 || index === 2 ? 160 : 100}
-                  height={index === 0 || index === 2 ? 160 : 100}
-                  className={`${
-                    index === 0 || index === 2
-                      ? "min-w-[100px]"
-                      : "min-w-[80px]"
-                  }`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 160px"
+                  className="object-contain"
+                  priority={index === 0} // preload only for above-the-fold images
                 />
               </div>
+
 
               <p className="text-gray-700 text-base text-center">
                 {segment.description}
@@ -114,6 +116,8 @@ const MarketSegments = () => {
                   src={segment.image}
                   alt={segment.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={index === 0}
                   className="object-cover"
                 />
               </div>
@@ -124,6 +128,8 @@ const MarketSegments = () => {
                 src={segment.image}
                 alt={segment.title}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                priority={index === 0}
                 className="object-cover"
               />
             </div>
@@ -135,11 +141,10 @@ const MarketSegments = () => {
                   alt="icon"
                   width={index === 0 || index === 2 ? 200 : 130}
                   height={index === 0 || index === 2 ? 200 : 130}
-                  className={`${
-                    index === 0 || index === 2
+                  className={`${index === 0 || index === 2
                       ? "min-w-[110px]"
                       : "min-w-[80px]"
-                  }`}
+                    }`}
                 />
 
                 <h4 className="text-2xl md:text-3xl font-bold text-[#EB505A] leading-snug">
