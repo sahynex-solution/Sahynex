@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <div id="info" className="scroll-mt-20">
       <section className="relative py-10 px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-12">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[#FF3E54D6] opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
         <div className="relative lg:w-1/2 w-full flex justify-center z-10">
           {/* Container to ensure proper positioning */}
           <div className="relative w-[420px] h-[280px] lg:w-[640px] lg:h-[420px] rounded-[32px] shadow-xl overflow-hidden">
@@ -91,7 +91,7 @@ const AboutPage = () => {
       <WhatwedoAbout />
       <LeadersGrid />
       <section id="clients" className="relative pt-3 pb-22 px-6 md:px-16 mt-24 scroll-mt-28">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#8DB8F7] to-[#FF3E54D6] opacity-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
         <div className="relative max-w-6xl mx-auto text-center z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mt-2 mb-0 pt-10">
             <span className="text-[#e80312]">Our Clients</span>
