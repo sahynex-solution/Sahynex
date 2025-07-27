@@ -77,7 +77,7 @@ const AboutPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-3 text-red-500 ">
             About Sahynex
           </h2>
-          <p className="text-gray-800 text-base md:text-lg leading-relaxed  max-w-5xl mx-auto px-3" style={ {textAlignLast: "center" }}>
+          <p className="text-gray-800 text-base md:text-lg leading-relaxed  max-w-5xl mx-auto px-3" style={{ textAlignLast: "center" }}>
             Driven by a deep passion for building meaningful digital solutions,
             Sahynex is where innovation meets execution. Evolving from our days
             as ISDC, we’ve worked with startups and enterprises alike bringing
@@ -90,7 +90,10 @@ const AboutPage = () => {
       </div>
       <WhatwedoAbout />
       <LeadersGrid />
-      <section id="clients" className="relative pt-3 pb-22 px-6 md:px-16 mt-4 scroll-mt-28">
+      <section
+        id="clients"
+        className="relative pt-8 pb-16 px-6 md:px-16 mt-0 scroll-mt-28"
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
         <div className="relative max-w-6xl mx-auto text-center z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mt-2 mb-0 pt-10">
