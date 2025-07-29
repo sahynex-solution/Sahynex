@@ -101,7 +101,7 @@ export default function ClientSlider() {
                     <h4 className="font-semibold text-base leading-snug">
                       {client.name}
                     </h4>
-                    <p className="text-sm opacity-80 leading-tight">
+                    <p className="text-sm opacity-80 leading-tight !text-left">
                       {client.title}
                     </p>
                   </div>
