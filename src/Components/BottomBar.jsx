@@ -3,10 +3,15 @@ import Link from 'next/link';
 
 const BottomBar = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-[#ff0000] via-[#745087] to-[#5C7FE0] text-white text-sm px-6 py-2 flex justify-center items-center">
-        <h3 className="font-semibold">
-          Designed by <Link href="/" >Sahynex Solutions</Link>
-        </h3>
+    <div
+      className="w-full text-white text-sm px-6 py-2 flex justify-center items-center"
+      style={{
+        background: "linear-gradient(to right, #ff0000, #745087, #5C7FE0)",
+      }}
+    >
+      <h3 className="font-semibold">
+        Designed by <Link href="/">Sahynex Solutions</Link>
+      </h3>
     </div>
   );
 };
