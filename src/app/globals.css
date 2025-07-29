@@ -53,3 +53,8 @@ p{
   background-color: black !important; 
   opacity: 1;
 }
+
+.swiper-pagination-spacing {
+  --swiper-pagination-bottom: 0px;
+}
+

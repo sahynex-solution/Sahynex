@@ -48,7 +48,8 @@ const Carousel = () => {
           swiper.navigation.init();
           swiper.navigation.update();
         }}
-        className="w-full h-full"
+        className="w-full h-full swiper-pagination-spacing"
+        // style={{ '--swiper-pagination-bottom': '0px'} as React.CSSProperties}
       >
         <SwiperSlide>
           <div
