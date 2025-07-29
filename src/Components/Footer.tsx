@@ -161,7 +161,8 @@ const SocialIcon = ({
       alt={alt}
       width={18}
       height={18}
-      className="w-[18px] h-[18px] object-contain"
+      style={{ width: "auto", height: "auto" }}
+      className="object-contain"
     />
   </Link>
 );
@@ -184,7 +185,7 @@ const CareerItem = ({
     className="flex items-center gap-3 group hover:opacity-90 transition"
   >
     <div className="bg-white text-red-500 p-2 w-10 h-10 rounded-md flex items-center justify-center">
-      <Image src={iconSrc} alt={alt} width={40} height={40} />
+      <Image src={iconSrc} alt={alt} width={40} height={40} style={{ width: "auto", height: "auto" }} />
     </div>
     <p className="text-red-500 font-medium group-hover:underline">{title}</p>
   </Link>
