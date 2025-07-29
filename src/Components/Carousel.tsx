@@ -7,6 +7,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Image from "next/image";
 
 const Carousel = () => {
   const prevRef = useRef(null);
@@ -49,21 +50,34 @@ const Carousel = () => {
           swiper.navigation.update();
         }}
         className="w-full h-full swiper-pagination-spacing"
-        // style={{ '--swiper-pagination-bottom': '0px'} as React.CSSProperties}
+      // style={{ '--swiper-pagination-bottom': '0px'} as React.CSSProperties}
       >
+
         <SwiperSlide>
-          <div
-            className="relative w-full h-full flex items-end"
-            style={{
-              background: `
-                linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
-                linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%),
-                url(/images/slide1.jpg) lightgray 50% / cover no-repeat
-              `,
-              backgroundBlendMode: "multiply, normal, normal",
-            }}
-          >
-            <div className="p-4 sm:p-8 text-white space-y-2">
+          <div className="relative w-full h-full flex items-end overflow-hidden">
+            {/* Background Image */}
+            <Image
+              src="/images/slide1.jpg"
+              alt="Slide 1 background"
+              fill
+              priority
+              className="object-cover z-0"
+            />
+
+            {/* Gradient Overlay */}
+            <div
+              className="absolute inset-0 z-10"
+              style={{
+                background: `
+          linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
+          linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%)
+        `,
+                mixBlendMode: "multiply",
+              }}
+            />
+
+            {/* Slide Content */}
+            <div className="relative z-20 p-4 sm:p-8 text-white" style={{ mixBlendMode: 'normal' }}>
               <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold font-poppins">
                 IT Solutions
               </p>
@@ -71,24 +85,35 @@ const Carousel = () => {
                 Professional <br />
                 <span>IT Services for Business</span>
               </h1>
-     
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div
-            className="relative w-full h-full flex items-end"
-            style={{
-              background: `
-                linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
-                linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%),
-                url(/images/slide3.jpg) lightgray 50% / cover no-repeat
-              `,
-              backgroundBlendMode: "multiply, normal, normal",
-            }}
-          >
-            <div className="p-4 sm:p-8 text-white space-y-2">
+          <div className="relative w-full h-full flex items-end overflow-hidden">
+            {/* Background Image */}
+            <Image
+              src="/images/slide3.jpg"
+              alt="Slide 3 background"
+              fill
+              priority
+              className="object-cover z-0"
+            />
+
+            {/* Gradient Overlay */}
+            <div
+              className="absolute inset-0 z-10"
+              style={{
+                background: `
+          linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
+          linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%)
+        `,
+                mixBlendMode: "multiply",
+              }}
+            />
+
+            {/* Slide Content */}
+            <div className="relative z-20 p-4 sm:p-8 text-white" style={{ mixBlendMode: 'normal' }}>
               <p className="text-yellow-400 text-sm sm:text-base md:text-lg font-semibold font-poppins">
                 IT Solutions
               </p>
@@ -97,9 +122,9 @@ const Carousel = () => {
                 <span>Marketing Services</span>
               </h1>
             </div>
-
           </div>
         </SwiperSlide>
+
       </Swiper>
     </div>
   );

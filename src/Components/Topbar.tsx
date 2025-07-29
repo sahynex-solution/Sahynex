@@ -4,7 +4,12 @@ import Link from "next/link";
 
 const TopBar = () => {
   return (
-    <div className="w-full bg-gradient-to-r from-[#5C7FE0] via-[#745087] to-[#ff0000] text-white text-xs sm:text-sm px-4 sm:px-8 py-1.5">
+   <div
+  className="w-full text-white text-xs sm:text-sm px-4 sm:px-8 py-1.5"
+  style={{
+    background: "linear-gradient(to right, #5C7FE0, #745087, #ff0000)"
+  }}
+>
       <div className="flex justify-between items-center gap-2">
     
         <div className="flex items-center gap-1 whitespace-nowrap">
