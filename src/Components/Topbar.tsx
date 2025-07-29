@@ -7,7 +7,7 @@ const TopBar = () => {
     <div className="w-full bg-gradient-to-r from-[#5C7FE0] via-[#745087] to-[#ff0000] text-white text-xs sm:text-sm px-4 sm:px-8 py-1.5">
       <div className="flex justify-between items-center gap-2">
     
-        <div className="flex items-center gap-2 whitespace-nowrap">
+        <div className="flex items-center gap-1 whitespace-nowrap">
           <FaEnvelope size={14} />
           <Link
             href="mailto:info@sahynex.com"
