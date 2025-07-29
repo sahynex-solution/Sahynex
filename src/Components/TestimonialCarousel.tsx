@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
   },
   {
     name: "Ashwath Hegde",
-    title: "Founder of Hegde Vahini",
+    title: "Founder of Heggade Vahini",
     image: "/images/clients/Ashwath_Hegde.jpg",
     message:
       "They understood our vision from day one and delivered a seamless platform that exceeded expectations. Their dedication and professionalism made the entire process smooth and collaborative",
