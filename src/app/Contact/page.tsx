@@ -126,8 +126,8 @@ setPhoneInput("");
             <div className="flex items-start">
               <FiPhone size={20} className="text-[#EB505A] mt-1 mr-3" />
               <div>
-                <h3 className="text-lg font-semibold text-[#EB505A]">Call Anytime</h3>
-                <p>+91 8762205219</p>
+                <h3 className="text-lg font-semibold  text-[#EB505A]">Call Anytime</h3>
+                <p className="font-mono font-light">+91 8762205219</p>
               </div>
             </div>
 
