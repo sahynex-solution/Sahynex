@@ -78,20 +78,7 @@ const Whatwedo = () => {
                 </div>
               </div>
 
-              <Link
-                href="/About"
-                className="text-sm font-semibold text-[#0e1f51] hover:text-[#EB505A] flex items-center gap-1"
-              >
-                <span className="underline font-semibold">READ MORE</span>
-                <Image
-  src="/icons/more.svg"
-  alt="arrow icon"
-  height={10}
-  width={10}
-  className="inline-block w-auto" // width auto to keep ratio if height is fixed
-/>
-
-              </Link>
+             
             </div>
           </div>
         </div>
