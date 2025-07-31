@@ -29,7 +29,7 @@ const WhatwedoAbout = () => {
               <p className="text-gray-700 mb-4 max-w-xl text-[15.5px] leading-relaxed">
                 At Sahynex, we craft digital products that not only solve
                 real-world problems but are truly loved by users. With every
-                client collaboration, we bring together design, technology, and
+                client collaboration, we bring together design, technology and
                 strategy to deliver impactful solutions that stand out.
               </p>
             </div>
