@@ -12,9 +12,7 @@ const AboutPage = () => {
       <section className="relative py-10 px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
         <div className="relative lg:w-1/2 w-full flex justify-center z-10">
-          {/* Container to ensure proper positioning */}
           <div className="relative w-[420px] h-[280px] lg:w-[640px] lg:h-[420px] rounded-[32px] shadow-xl overflow-hidden">
-            {/* Image */}
             <Image
               src="/images/slide1.jpg"
               alt="Students working together"
@@ -22,7 +20,6 @@ const AboutPage = () => {
               className="object-cover rounded-[32px]"
             />
 
-            {/* Gradient Overlay */}
             <div
               className="absolute inset-0 rounded-[32px] pointer-events-none"
               style={{
@@ -47,7 +44,7 @@ const AboutPage = () => {
           <p className="text-[#2B2B4F] text-base mb-8">
             We are a passionate team committed to accelerating your business
             growth through innovative digital solutions, combining strategy,
-            design, and technology to deliver impactful results that help you
+            design and technology to deliver impactful results that help you
             stay ahead in a rapidly evolving market
           </p>
           <div className="bg-[#fbeaec] rounded-2xl p-6 flex items-center gap-6 mb-8 shadow">
@@ -77,13 +74,13 @@ const AboutPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-3 text-red-500 ">
             About Sahynex
           </h2>
-          <p className="text-gray-800 text-base md:text-lg leading-relaxed  max-w-5xl mx-auto px-3" style={{ textAlignLast: "center" }}>
+          <p className="text-gray-800 text-base md:text-lg leading-relaxed  max-w-5xl mx-auto px-3" >
             Driven by a deep passion for building meaningful digital solutions,
             Sahynex is where innovation meets execution. Evolving from our days
-            as ISDC, we’ve worked with startups and enterprises alike bringing
-            thoughtful design, powerful development, and a relentless focus on
-            the user. For us, every project is a commitment: to quality, to
-            collaboration, and to creating tools that people genuinely love to
+            as ISDC, we've worked with startups and enterprises alike bringing
+            thoughtful design, powerful development and a relentless focus on
+            the user. For us, every project is a commitment to quality, to
+            collaboration and to creating tools that people genuinely love to
             use.
           </p>
         </div>
