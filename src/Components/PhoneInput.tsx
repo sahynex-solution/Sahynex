@@ -39,7 +39,7 @@ const PhoneInput = forwardRef<HTMLInputElement, PhoneInputProps>(
         onChange={handleChange}
         placeholder="Phone"
         required
-        className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none  focus:ring-[#EB505A] transition"
+        className="w-full p-3 rounded-md bg-gray-100 text-black placeholder-gray-600 focus:outline-none  focus:ring-[#EB505A] transition font-mono"
       />
     );
   }
