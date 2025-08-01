@@ -5,7 +5,8 @@ import Link from "next/link";
 const TopBar = () => {
   return (
    <div
-  className="w-full text-white text-xs sm:text-sm px-4 sm:px-8 py-1.5"
+  className="w-full text-white text-xs sm:text-sm px-4 sm:px-8 py-2.5 sm:py-2"
+
   style={{
     background: "linear-gradient(to right, #5C7FE0, #745087, #ff0000)"
   }}
