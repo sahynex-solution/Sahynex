@@ -92,8 +92,8 @@ const AboutPage = () => {
         className="relative pt-8 pb-16 px-6 md:px-16 mt-0 scroll-mt-28"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]"></div>
-        <div className="relative max-w-6xl mx-auto text-center z-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mt-2 mb-0 pt-10">
+        <div className="relative max-w-6xl mx-auto text-center z-10 ">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0e1f51] mt-2 mb-0 pt-10 ">
             <span className="text-[#e80312]">Our Clients</span>
           </h2>
           <ClientSlider />

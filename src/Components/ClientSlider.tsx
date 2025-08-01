@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 
 const clients = [
   {
-    name: "Shri Mahesh Bhat Choontharu",
-    title: "President of Shri Rama Seva Samiti Chokkadi",
+    name: "Mahesh Bhat Choontharu",
+    title: "President,Shri Rama Seva Samithi Chokkadi",
     testimonial:
       "They took feedback seriously and translated our requirements into a powerful tool that our customers love using.",
     image: "/images/clients/user.png",
@@ -20,7 +20,7 @@ const clients = [
   },
   {
     name: "Ashwath Hegde",
-    title: "Founder of Heggade Vahini",
+    title: "Founder,Heggade Vahini",
     testimonial:
       "They understood our vision from day one and delivered a seamless platform that really exceeded our expectations. ",
     image: "/images/clients/Ashwath_Hegde.jpg",
@@ -28,8 +28,8 @@ const clients = [
     quoteColor: "text-white", // White quote
   },
   {
-    name: "Shri Kishor Kumar Kujugodu",
-    title: "President, Harihareshwara Temple",
+    name: "Kishor Kumar Kujugodu",
+    title: "President,Harihareshwara Temple",
     testimonial:
       "From UI/UX to deployment, they owned the product like it was theirs. We’d gladly work with them again.",
     image: "/images/clients/user.png",
@@ -49,7 +49,7 @@ const clients = [
 
 export default function ClientSlider() {
   return (
-    <div className="relative py-12">
+    <div className="relative py-12 ">
       <div className="relative overflow-visible">
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -87,7 +87,7 @@ export default function ClientSlider() {
                   <hr className="border-gray-300 opacity-50 relative z-10" />
                 </div>
 
-                <div className="flex items-start mt-4 md:mt-6 gap-4">
+                <div className="flex items-start mt-4 md:mt-6 gap-4 mb-4">
                   <div className="flex-shrink-0">
                     <Image
                       src={client.image}
@@ -97,7 +97,7 @@ export default function ClientSlider() {
                       className="rounded-full"
                     />
                   </div>
-                  <div className="flex flex-col text-left">
+                  <div className="flex flex-col text-left ">
                     <h4 className="font-semibold text-base leading-snug">
                       {client.name}
                     </h4>
