@@ -57,7 +57,7 @@ const Carousel = () => {
           <div className="relative w-full h-full flex items-end overflow-hidden">
             {/* Background Image */}
             <Image
-              src="/images/slide1.jpg"
+              src="/images/slideone.jpg"
               alt="Slide 1 background"
               fill
               priority
