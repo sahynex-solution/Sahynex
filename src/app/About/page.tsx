@@ -60,7 +60,7 @@ const AboutPage = () => {
               </p>
               <p className="text-[#EB505A] text-sm">
                 Ready to Help :{" "}
-                <a href="tel:+918762205219" className="font-bold">
+                <a href="tel:+918762205219" className="font-mono font-semibold">
                   +91 8762205219
                 </a>
               </p>
