@@ -14,7 +14,7 @@ const Carousel = () => {
   const nextRef = useRef(null);
 
   return (
-    <div className="w-full h-[250px] sm:h-[280px] md:h-[320px] lg:h-[450px] relative">
+    <div className="w-full h-[180px] sm:h-[280px] md:h-[320px] lg:h-[450px] relative ">
       <button
         ref={prevRef}
         className="absolute top-1/2 left-4 z-10 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white p-2 rounded-full"
