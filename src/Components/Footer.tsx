@@ -94,7 +94,7 @@ export default function Footer() {
               if (!email) return;
               setSubscriptionMessage("");
               try {
-                const res = await fetch("/apis/subscription", {
+                const res = await fetch("/api/subscription", {
                   method: "POST",
                   headers: { "Content-Type": "application/json" },
                   body: JSON.stringify({ email }),
