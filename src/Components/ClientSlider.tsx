@@ -14,7 +14,7 @@ const clients = [
     title: "President,Shri Rama Seva Samithi Chokkadi",
     testimonial:
       "They took feedback seriously and translated our requirements into a powerful tool that our customers love using.",
-    image: "/images/clients/user.png",
+    image: "/images/clients/mahesh_bhat_choontaru.jpg",
     bgColor: "bg-[#4A90E2] text-white", // White card
     quoteColor: "text-white", // Dark blue quote
   },
@@ -32,7 +32,7 @@ const clients = [
     title: "President,Harihareshwara Temple",
     testimonial:
       "From UI/UX to deployment, they owned the product like it was theirs. We’d gladly work with them again.",
-    image: "/images/clients/user.png",
+    image: "/images/clients/kishor_kumar_kujugodu.jpg",
     bgColor: "bg-[#4A90E2] text-white", // Blue card
     quoteColor: "text-white", // White quote
   },

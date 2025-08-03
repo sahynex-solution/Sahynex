@@ -198,7 +198,7 @@ export default function Page() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="bg-gray-50 rounded-xl p-8 flex flex-col items-start shadow-sm hover:shadow-lg transition"
+              className="bg-gray-50 rounded-xl p-8 flex flex-col items-start shadow-sm hover:shadow-md transition"
             >
               <Image src={service.icon} alt={service.title} width={64} height={64} className="mb-4 inline-block w-auto" />
               <h3 className="font-bold text-lg text-blue-900 mb-2">{service.title}</h3>
