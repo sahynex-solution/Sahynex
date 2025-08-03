@@ -161,7 +161,7 @@ setPhoneInput("");
                     <FaInstagram size={20} />
                   </div>
                 </Link>
-                <Link href="https://facebook.com" target="_blank">
+                <Link href="https://www.instagram.com/sahynex/" target="_blank">
                   <div className="p-2 bg-[#EB505A] rounded-md text-white hover:bg-[#e03e4b]">
                     <FaFacebookF size={20} />
                   </div>

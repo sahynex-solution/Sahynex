@@ -23,14 +23,17 @@ const TopBar = () => {
           </Link>
         </div>
         <div className="flex items-center gap-3 flex-wrap justify-end">
-          <Link href="https://instagram.com" target="_blank" className="hover:text-yellow-400">
-            <FaInstagram size={14} />
-          </Link>
-          <Link href="https://twitter.com" target="_blank" className="hover:text-yellow-400">
-            <FaTwitter size={14} />
-          </Link>
           <Link href="https://www.linkedin.com/company/sahynex" target="_blank" className="hover:text-yellow-400">
             <FaLinkedinIn size={14} />
+          </Link>
+          <Link href="https://www.instagram.com/sahynex/" target="_blank" className="hover:text-yellow-400">
+            <FaInstagram size={14} />
+          </Link>
+          <Link href="https://www.instagram.com/sahynex/" target="_blank" className="hover:text-yellow-400">
+            <FaFacebookF size={14} />
+          </Link>
+          <Link href="https://x.com/sahynex?t=x9L3bvGfqIe7_zmIALHjtg&s=09" target="_blank" className="hover:text-yellow-400">
+            <FaTwitter size={14} />
           </Link>
           <Link
             href="#"

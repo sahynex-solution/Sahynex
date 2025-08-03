@@ -28,7 +28,7 @@ export default function Footer() {
               alt="Instagram"
             />
             <SocialIcon
-              href="https://facebook.com"
+              href="https://www.instagram.com/sahynex/"
               iconSrc="/footer/facebook.svg"
               alt="Facebook"
             />
