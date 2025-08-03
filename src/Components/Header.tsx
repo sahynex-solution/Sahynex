@@ -24,7 +24,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white px-4 md:px-6 py-4.5 z-10  border-b border-[#f2f2f2]">
+    <header className="bg-white px-4 md:px-6 py-4.5 z-10 border-b border-[#f2f2f2] shadow-md md:shadow-lg">
       <div className="flex items-center justify-between ">
         {/* Changed ml-12 to md:ml-12 to remove left margin on mobile */}
         <Link href="/" className="ml-3 sm:ml-7 md:ml-12">
