@@ -58,3 +58,31 @@ p{
   --swiper-pagination-bottom: 0px;
 }
 
+@keyframes slide-medium {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-fast {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide-medium {
+  animation: slide-medium 30s linear infinite;
+}
+
+.animate-slide-fast {
+  animation: slide-fast 15s linear infinite;
+}
+
+
+
