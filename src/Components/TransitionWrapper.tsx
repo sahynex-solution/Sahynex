@@ -7,9 +7,9 @@ export default function TransitionWrapper({ children }: { children: React.ReactN
   const pathname = usePathname();
 
   
-  if (pathname === "/") {
+ /* if (pathname === "/") {
     return <>{children}</>;
-  }
+  }*/
 
   return <PageTransition>{children}</PageTransition>;
 }
