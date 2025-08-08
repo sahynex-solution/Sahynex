@@ -4,12 +4,16 @@ import Image from "next/image"
 
 const clients = [
   {
-    name: "Shri Rama Temple, Chokkadi",
-    src: "/images/clients/mahesh_bhat_choontaru.jpg",
+    name: "Sahyadri College of Engineering and Management",
+    src: "/images/clients/Sayhadri.jpg",
   },
   {
     name: "Heggade Vahini",
     src: "/images/clients/heggade_vahini.webp",
+  },
+  {
+    name: "Shri Rama Temple, Chokkadi",
+    src: "/images/clients/mahesh_bhat_choontaru.jpg",
   },
   {
     name: "Shri Harihareshwara Temple",
@@ -36,10 +40,10 @@ export default function ClientSlider() {
   {[...clients, ...clients].map((client, index) => (
     <div
       key={`logo-${index}`}
-      className="flex-shrink-0 mx-6 lg:mx-8 flex items-center justify-center rounded-3xl"
+      className="bg-white flex-shrink-0 mx-6 lg:mx-8 flex items-center justify-center rounded-3xl"
     >
       <div
-        className="w-[230px] h-[230px] lg:w-[300px] lg:h-[300px] rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 flex flex-col items-center justify-center"
+        className="w-[230px] h-[230px] lg:w-[300px] lg:h-[300px] rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 flex flex-col items-center !justify-center"
         >
             
         <div className="relative w-[150px] h-[150px] sm:w-[180px] sm:h-[180px] md:w-[200px] md:h-[200px] lg:w-[240px] lg:h-[240px]">
@@ -50,11 +54,10 @@ export default function ClientSlider() {
             className="object-contain rounded-lg"
             />
         </div>
-        <p className="text-[#1e293b] font-semibold text-md lg:text-xl leading-snug text-center mt-4">
-            {client.name}
+        <p className="text-[#1e293b] font-semibold text-base lg:text-lg leading-snug text-center !justify-center mt-4 whitespace-normal tracking-tight">
+          {client.name}
         </p>
     </div>
-
     </div>
   ))}
 </div>
