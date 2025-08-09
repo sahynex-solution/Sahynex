@@ -11,7 +11,7 @@ const clients = [
   {
     name: (
       <>
-        Sahyadri College Of Engineering<br />And Management, Mangaluru
+        Sahyadri College of Engineering<br />&amp; Management, Mangaluru
       </>
     ),
     src: "/images/clients/Sahyadri.jpg",
@@ -64,7 +64,7 @@ export default function ClientSlider() {
                   </div>
 
               
-                  <p className="text-[#1e293b] font-semibold text-sm sm:text-base lg:text-lg leading-snug text-center mt-4 tracking-tight break-words">
+                  <p className="text-[#1e293b] font-semibold text-sm sm:text-base lg:text-lg leading-snug text-center mt-4 tracking-tight break-words center-last">
                     {client.name}
                   </p>
                 </div>

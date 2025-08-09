@@ -10,7 +10,7 @@ const BottomBar = () => {
       }}
     >
       <h3 className="font-semibold">
-        Designed by <Link href="/">Sahynex Tech Solutions</Link>
+        Designed by <Link href="/">Sahynex Techsolutions</Link>
       </h3>
     </div>
   );
