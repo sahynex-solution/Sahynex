@@ -11,7 +11,7 @@ const clients = [
   {
     name: (
       <>
-        Sahyadri College of Engineering<br />and Management, Mangaluru
+        Sahyadri College of Engineering<br />&amp; Management, Mangaluru
       </>
     ),
     src: "/images/clients/Sahyadri.jpg",
