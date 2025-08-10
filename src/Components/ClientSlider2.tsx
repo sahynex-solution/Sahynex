@@ -49,7 +49,7 @@ export default function ClientSlider() {
               className="flex-shrink-0 mx-6 lg:mx-8 flex items-center justify-center"
             >
              
-              <div className="w-[230px] min-h-[260px] lg:w-[300px] lg:min-h-[340px] rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 bg-white flex flex-col">
+              <div className="w-[230px] h-[250px] lg:w-[300px] lg:h-[350px] rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 bg-white flex flex-col">
           
                 <div className="flex flex-col flex-grow items-center justify-center p-6">
                 
