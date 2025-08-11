@@ -86,7 +86,12 @@ p{
 
 .center-last {
   text-align: justify;
-  text-align-last: center; /* Forces last line to justify */
+  text-align-last: center; /* Forces last line to center */
+}
+
+.justify-last {
+  text-align: justify;
+  text-align-last: justify; /* Forces last line to justify */
 }
 
 
