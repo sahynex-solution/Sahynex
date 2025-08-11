@@ -69,8 +69,8 @@ const Carousel = () => {
               className="absolute inset-0 z-10"
               style={{
                 background: `
-          linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
-          linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%)
+          linear-gradient(264deg, rgba(253, 40, 56, 0.30) 11.69%, rgba(73, 123, 250, 0.30) 77.83%),
+          linear-gradient(263deg, rgba(200, 0, 14, 0.25) 21.88%, rgba(71, 123, 251, 0.25) 81.65%)
         `,
                 mixBlendMode: "multiply",
               }}
@@ -105,8 +105,8 @@ const Carousel = () => {
               className="absolute inset-0 z-10"
               style={{
                 background: `
-          linear-gradient(264deg, rgba(253, 40, 56, 0.35) 11.69%, rgba(73, 123, 250, 0.35) 77.83%),
-          linear-gradient(263deg, rgba(200, 0, 14, 0.33) 21.88%, rgba(71, 123, 251, 0.33) 81.65%)
+          linear-gradient(264deg, rgba(253, 40, 56, 0.30) 11.69%, rgba(73, 123, 250, 0.30) 77.83%),
+          linear-gradient(263deg, rgba(200, 0, 14, 0.25) 21.88%, rgba(71, 123, 251, 0.25) 81.65%)
         `,
                 mixBlendMode: "multiply",
               }}
