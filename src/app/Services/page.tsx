@@ -190,7 +190,7 @@ export default function Page() {
 
       {/* Services Section */}
       <section className="bg-white py-16 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <span className="text-pink-500 font-semibold text-lg">Services</span>
           <h2 className="text-4xl sm:text-5xl font-bold text-blue-900 mt-2 mb-4">Our Expertise</h2>
         </div>

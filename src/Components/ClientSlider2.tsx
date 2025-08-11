@@ -37,7 +37,7 @@ const clients = [
 export default function ClientSlider() {
   return (
     <div className="w-full overflow-hidden py-12 bg-gradient-to-r from-[#f8f9ff] to-[#fdeef3]">
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden pb-8">
         <h2 className="text-4xl md:text-5xl font-bold text-[#0e1f51] mt-2 mb-12">
           <span className="text-[#e80312]">Our Clients</span>
         </h2>
@@ -73,7 +73,6 @@ export default function ClientSlider() {
             </div>
           ))}
         </div>
-
       </div>
     </div>
   )
