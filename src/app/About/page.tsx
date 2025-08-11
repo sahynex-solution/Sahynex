@@ -24,7 +24,7 @@ const AboutPage = () => {
               className="absolute inset-0 rounded-[32px] pointer-events-none"
               style={{
                 background: `
-          linear-gradient(to right, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0.2) 100%)
+          linear-gradient(to right, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.1) 100%)
         `,
                 backgroundBlendMode: 'multiply'
               }}
